@@ -1,4 +1,4 @@
-﻿import math
+import math
 from datetime import datetime, timedelta
 import pandas as pd
 import numpy as np
@@ -244,7 +244,19 @@ class KPIService:
         )
 
     @classmethod
-    def get_all_metrics(cls, workspace_id: Optional[str], db: Session) -> List[MetricResponse]:
+    def get_all_metrics(cls, *args, **kwargs) -> List[MetricResponse]:
+        db: Optional[Session] = kwargs.get("db")
+        workspace_id: Optional[str] = kwargs.get("workspace_id")
+        
+        for a in args:
+            if isinstance(a, Session):
+                db = a
+            elif isinstance(a, str) or a is None:
+                workspace_id = a
+
+        if not db:
+            return []
+
         ws = db.query(Workspace).filter(Workspace.id == workspace_id).first() if workspace_id else db.query(Workspace).first()
         if not ws:
             return []
@@ -254,6 +266,25 @@ class KPIService:
 
         metrics = db.query(Metric).filter(Metric.workspace_id == ws.id).all()
         return [cls.evaluate_metric(m, period="Current", db=None) for m in metrics]
+
+    @classmethod
+    def get_all_kpi_snapshots(cls, *args, **kwargs) -> List[Dict[str, Any]]:
+        metrics_res = cls.get_all_metrics(*args, **kwargs)
+        return [
+            {
+                "id": m.id,
+                "name": m.name,
+                "code": m.code,
+                "current_value": m.current_value,
+                "previous_value": m.previous_value,
+                "pct_change": m.pct_change,
+                "status": m.status,
+                "owner": m.owner,
+                "target_value": m.target_value,
+                "sparkline": [{"label": p.label, "value": p.value} for p in m.sparkline]
+            } for m in metrics_res
+        ]
+
 
     @classmethod
     def test_formula(cls, source_table: str, formula: str) -> Dict[str, Any]:

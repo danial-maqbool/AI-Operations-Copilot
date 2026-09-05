@@ -231,3 +231,22 @@ class AnomalyDetectionService:
             anomalies_detected=len(deduped),
             items=deduped
         )
+
+    @classmethod
+    def detect_table_anomalies(cls, table_name: str) -> Dict[str, Any]:
+        res = cls.scan_table(table_name)
+        return {
+            "table_name": table_name,
+            "total_anomalies": res.anomalies_detected,
+            "anomalies": [
+                {
+                    "column": it.column_name,
+                    "outlier_value": it.observed_value,
+                    "method": it.method,
+                    "deviation_score": it.deviation
+                } for it in res.items
+            ]
+        }
+
+AnomalyService = AnomalyDetectionService
+

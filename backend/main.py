@@ -30,7 +30,8 @@ app.add_middleware(
 from backend.api import (
     health, data_sources, catalog, quality, queries,
     dataframe_analysis, metrics, rules, exceptions,
-    anomalies, documents, copilot, actions, entity_views
+    anomalies, documents, copilot, actions, entity_views,
+    workflows, morning_review
 )
 
 # Register routers
@@ -48,6 +49,8 @@ app.include_router(documents.router, prefix="/api")
 app.include_router(copilot.router, prefix="/api")
 app.include_router(actions.router, prefix="/api")
 app.include_router(entity_views.router, prefix="/api")
+app.include_router(workflows.router, prefix="/api")
+app.include_router(morning_review.router, prefix="/api")
 
 # Static frontend serving when built
 frontend_dist = settings.BASE_DIR / "frontend" / "dist"

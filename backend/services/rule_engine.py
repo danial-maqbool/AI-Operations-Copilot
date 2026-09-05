@@ -1,4 +1,4 @@
-﻿import re
+import re
 from datetime import datetime, timedelta
 import pandas as pd
 import numpy as np
@@ -254,7 +254,19 @@ class BusinessRuleEngine:
         return exceptions_created
 
     @classmethod
-    def evaluate_all_rules(cls, workspace_id: Optional[str], db: Session) -> List[OperationsException]:
+    def evaluate_all_rules(cls, *args, **kwargs) -> List[OperationsException]:
+        db: Optional[Session] = kwargs.get("db")
+        workspace_id: Optional[str] = kwargs.get("workspace_id")
+        
+        for a in args:
+            if isinstance(a, Session):
+                db = a
+            elif isinstance(a, str) or a is None:
+                workspace_id = a
+
+        if not db:
+            return []
+
         ws = db.query(Workspace).filter(Workspace.id == workspace_id).first() if workspace_id else db.query(Workspace).first()
         if not ws:
             return []
@@ -267,3 +279,6 @@ class BusinessRuleEngine:
         for r in rules:
             all_exc.extend(cls.evaluate_rule(r, db))
         return all_exc
+
+RuleEngine = BusinessRuleEngine
+
