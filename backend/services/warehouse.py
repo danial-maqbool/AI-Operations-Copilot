@@ -1,4 +1,4 @@
-﻿import sqlite3
+import sqlite3
 from pathlib import Path
 import pandas as pd
 from sqlalchemy import create_engine, text
@@ -33,3 +33,25 @@ def get_warehouse_tables():
 def query_warehouse(sql: str, params: dict = None) -> pd.DataFrame:
     with warehouse_engine.connect() as conn:
         return pd.read_sql_query(text(sql), conn, params=params)
+
+class WarehouseService:
+    @staticmethod
+    def get_engine():
+        return warehouse_engine
+
+    @staticmethod
+    def get_connection():
+        return get_warehouse_connection()
+
+    @staticmethod
+    def load_df(df: pd.DataFrame, table_name: str, if_exists: str = "replace"):
+        return load_df_to_warehouse(df, table_name, if_exists=if_exists)
+
+    @staticmethod
+    def get_tables():
+        return get_warehouse_tables()
+
+    @staticmethod
+    def query(sql: str, params: dict = None) -> pd.DataFrame:
+        return query_warehouse(sql, params=params)
+
