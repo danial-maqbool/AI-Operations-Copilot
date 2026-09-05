@@ -1,4 +1,4 @@
-﻿from contextlib import asynccontextmanager
+from contextlib import asynccontextmanager
 from pathlib import Path
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -6,11 +6,10 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from backend.config import settings
 from backend.database import init_db
-from backend.api import health
+from backend.api import health, data_sources
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Initialize internal SQLite database tables
     init_db()
     yield
 
@@ -21,7 +20,6 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
-# CORS Middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -30,8 +28,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Register health router
+# Register routers
 app.include_router(health.router, prefix="/api")
+app.include_router(data_sources.router, prefix="/api")
 
 # Static frontend serving when built
 frontend_dist = settings.BASE_DIR / "frontend" / "dist"

@@ -53,6 +53,10 @@ data/*.db
 data/*.sqlite
 data/*.sqlite3
 data/vector_store/
+data/uploads/*
+!data/uploads/.gitkeep
+data/sources/*
+!data/sources/.gitkeep
 uploads/*
 !uploads/.gitkeep
 exports/*
