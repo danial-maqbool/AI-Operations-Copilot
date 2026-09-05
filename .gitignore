@@ -32,6 +32,8 @@ share/python-wheels/
 htmlcov/
 test-results/
 playwright-report/
+*.log
+
 
 # Node / Frontend
 node_modules/

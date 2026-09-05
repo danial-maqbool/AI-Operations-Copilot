@@ -126,15 +126,20 @@ export const DataSourcesView: React.FC = () => {
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-800/60">
-                {tablePreview.rows?.map((row: any[], rIdx: number) => (
-                  <tr key={rIdx} className="hover:bg-slate-800/40 text-slate-300 transition-colors">
-                    {row.map((cell, cIdx) => (
-                      <td key={cIdx} className="p-3 font-mono text-[11px] whitespace-nowrap">
-                        {cell !== null && cell !== undefined ? String(cell) : <span className="text-slate-600">NULL</span>}
-                      </td>
-                    ))}
-                  </tr>
-                ))}
+                {tablePreview.rows?.map((row: any, rIdx: number) => {
+                  const cells = Array.isArray(row)
+                    ? row
+                    : (tablePreview.columns ? tablePreview.columns.map((col: string) => row[col]) : Object.values(row));
+                  return (
+                    <tr key={rIdx} className="hover:bg-slate-800/40 text-slate-300 transition-colors">
+                      {cells.map((cell: any, cIdx: number) => (
+                        <td key={cIdx} className="p-3 font-mono text-[11px] whitespace-nowrap">
+                          {cell !== null && cell !== undefined ? String(cell) : <span className="text-slate-600">NULL</span>}
+                        </td>
+                      ))}
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>

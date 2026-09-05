@@ -5,9 +5,13 @@ from backend.services.sql_safety import SafeSQLEngine
 
 @pytest.fixture(scope="module", autouse=True)
 def ensure_warehouse():
-    # Make sure tables exist
-    df = query_warehouse("SELECT count(*) as cnt FROM orders")
-    assert df["cnt"].iloc[0] > 0
+    from backend.database import SessionLocal
+    from backend.services.demo_seed_service import DemoSeedService
+    db = SessionLocal()
+    try:
+        DemoSeedService.generate_and_seed_demo_company(db)
+    finally:
+        db.close()
 
 # Benchmark 1: Delayed Orders
 def test_benchmark_01_delayed_orders():

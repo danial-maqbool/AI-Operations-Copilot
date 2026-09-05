@@ -144,19 +144,26 @@ export const CopilotView: React.FC = () => {
                     <table className="w-full text-xs text-left">
                       <thead className="bg-slate-950/80 text-slate-400">
                         <tr>
-                          {m.response.table_data.columns.slice(0, 5).map((c, idx) => (
-                            <th key={idx} className="p-2 font-medium">{c}</th>
+                          {m.response.table_data.columns?.slice(0, 5).map((c: any, idx: number) => (
+                            <th key={idx} className="p-2 font-medium">{String(c)}</th>
                           ))}
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-slate-800">
-                        {m.response.table_data.rows.slice(0, 5).map((row, rIdx) => (
-                          <tr key={rIdx} className="hover:bg-slate-800/40">
-                            {row.slice(0, 5).map((cell, cIdx) => (
-                              <td key={cIdx} className="p-2 text-slate-300 font-mono text-[11px]">{String(cell)}</td>
-                            ))}
-                          </tr>
-                        ))}
+                        {m.response.table_data.rows?.slice(0, 5).map((row: any, rIdx: number) => {
+                          const cells = Array.isArray(row)
+                            ? row
+                            : (m.response!.table_data?.columns ? m.response!.table_data.columns.map((col: string) => row[col]) : Object.values(row));
+                          return (
+                            <tr key={rIdx} className="hover:bg-slate-800/40">
+                              {cells.slice(0, 5).map((cell: any, cIdx: number) => (
+                                <td key={cIdx} className="p-2 text-slate-300 font-mono text-[11px]">
+                                  {cell !== null && cell !== undefined ? String(cell) : ''}
+                                </td>
+                              ))}
+                            </tr>
+                          );
+                        })}
                       </tbody>
                     </table>
                   </div>
@@ -251,14 +258,20 @@ export const CopilotView: React.FC = () => {
                   <Code className="w-3.5 h-3.5 text-blue-400" />
                   <span>Validated Safe SQL ({activeEvidence.sql_queries?.length || 0})</span>
                 </div>
-                {activeEvidence.sql_queries?.map((sql, i) => (
-                  <pre
-                    key={i}
-                    className="p-3 rounded-lg bg-slate-950 border border-slate-800 text-[11px] font-mono text-cyan-300 overflow-x-auto whitespace-pre-wrap leading-relaxed"
-                  >
-                    {sql}
-                  </pre>
-                ))}
+                {activeEvidence.sql_queries?.map((sql: any, i: number) => {
+                  const sqlText = typeof sql === 'string' ? sql : (sql?.sql || JSON.stringify(sql));
+                  const explanation = typeof sql === 'object' && sql?.explanation ? sql.explanation : null;
+                  return (
+                    <div key={i} className="space-y-1">
+                      <pre className="p-3 rounded-lg bg-slate-950 border border-slate-800 text-[11px] font-mono text-cyan-300 overflow-x-auto whitespace-pre-wrap leading-relaxed">
+                        {sqlText}
+                      </pre>
+                      {explanation && (
+                        <p className="text-[11px] text-slate-400 italic px-1">{String(explanation)}</p>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
 
               {/* Policy Document Citations */}
@@ -267,33 +280,36 @@ export const CopilotView: React.FC = () => {
                   <FileText className="w-3.5 h-3.5 text-amber-400" />
                   <span>Policy Citations ({activeEvidence.policy_citations?.length || 0})</span>
                 </div>
-                {activeEvidence.policy_citations?.map((cit, i) => (
-                  <div key={i} className="p-2.5 rounded-lg bg-slate-800/40 border border-slate-700/50 text-[11px] text-slate-300 whitespace-pre-line">
-                    {cit}
-                  </div>
-                ))}
+                {activeEvidence.policy_citations?.map((cit: any, i: number) => {
+                  const citText = typeof cit === 'string' ? cit : (cit?.citation || cit?.text || JSON.stringify(cit));
+                  return (
+                    <div key={i} className="p-2.5 rounded-lg bg-slate-800/40 border border-slate-700/50 text-[11px] text-slate-300 whitespace-pre-line">
+                      {citText}
+                    </div>
+                  );
+                })}
               </div>
 
               {/* Data Sources Used */}
               <div className="space-y-1.5">
                 <span className="text-slate-400 font-semibold block">Data Tables Consulted</span>
                 <div className="flex flex-wrap gap-1.5">
-                  {activeEvidence.data_used?.map((tbl, i) => (
+                  {activeEvidence.data_used?.map((tbl: any, i: number) => (
                     <span key={i} className="px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-mono text-[10px] border border-slate-700">
-                      {tbl}
+                      {typeof tbl === 'string' ? tbl : (tbl?.table_name || JSON.stringify(tbl))}
                     </span>
                   ))}
                 </div>
               </div>
 
               {/* Recommended Actions */}
-              {activeEvidence.recommended_actions?.length > 0 && (
+              {activeEvidence.recommended_actions && activeEvidence.recommended_actions.length > 0 && (
                 <div className="space-y-2 pt-2 border-t border-slate-800">
                   <span className="text-slate-400 font-semibold block">Recommended Action Items</span>
                   {activeEvidence.recommended_actions.map((act: any, i: number) => (
                     <div key={i} className="p-2.5 rounded-lg bg-blue-950/30 border border-blue-800/40 space-y-1">
-                      <span className="font-semibold text-blue-300 text-xs">{act.title}</span>
-                      <p className="text-[11px] text-slate-400">{act.reason}</p>
+                      <span className="font-semibold text-blue-300 text-xs">{typeof act === 'string' ? act : (act?.title || JSON.stringify(act))}</span>
+                      {act?.reason && <p className="text-[11px] text-slate-400">{String(act.reason)}</p>}
                     </div>
                   ))}
                 </div>
