@@ -360,3 +360,27 @@ class DataQualityEngine:
             warning_findings=warning_count,
             table_reports=table_reports
         )
+
+    @classmethod
+    def evaluate_table_quality(cls, db: Session, table_id: str):
+        tbl = db.query(DataSourceTable).filter(DataSourceTable.id == table_id).first()
+        if not tbl:
+            return None
+        cols = db.query(DataCatalogColumn).filter(DataCatalogColumn.table_id == tbl.id).all()
+        res = cls.audit_table(tbl.table_name, cols)
+        scores = cls.calculate_health_scores(res["findings"], tbl.row_count, tbl.column_count)
+        tbl.data_health_score = scores.overall_score
+        tbl.health_metrics = {
+            "completeness": scores.completeness,
+            "uniqueness": scores.uniqueness,
+            "validity": scores.validity,
+            "consistency": scores.consistency,
+            "referential_integrity": scores.referential_integrity,
+            "overall_score": scores.overall_score,
+            "findings_count": len(res["findings"])
+        }
+        db.commit()
+        return scores
+
+QualityService = DataQualityEngine
+

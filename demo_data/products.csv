@@ -1,0 +1,81 @@
+product_id,name,category,unit_cost,unit_price,reorder_level
+PROD-201,Hydraulic Unit Mod-101,Hydraulics,378.87,595.65,50
+PROD-202,Sensors & IoT Unit Mod-102,Sensors & IoT,101.26,137.78,25
+PROD-203,Safety Equipment Unit Mod-103,Safety Equipment,141.58,294.59,50
+PROD-204,Fastener Unit Mod-104,Fasteners,321.4,464.33,100
+PROD-205,Pneumatic Unit Mod-105,Pneumatics,68.6,93.24,50
+PROD-206,Heavy Machinery Unit Mod-106,Heavy Machinery,224.49,377.22,25
+PROD-207,Hydraulic Unit Mod-107,Hydraulics,435.34,670.14,100
+PROD-208,Sensors & IoT Unit Mod-108,Sensors & IoT,73.49,102.81,100
+PROD-209,Safety Equipment Unit Mod-109,Safety Equipment,56.48,102.91,15
+PROD-210,Fastener Unit Mod-110,Fasteners,89.48,175.23,50
+PROD-211,Pneumatic Unit Mod-111,Pneumatics,61.2,94.01,100
+PROD-212,Heavy Machinery Unit Mod-112,Heavy Machinery,282.69,549.28,25
+PROD-213,Hydraulic Unit Mod-113,Hydraulics,354.67,579.99,100
+PROD-214,Sensors & IoT Unit Mod-114,Sensors & IoT,151.38,271.18,100
+PROD-215,Safety Equipment Unit Mod-115,Safety Equipment,154.79,281.06,15
+PROD-216,Fastener Unit Mod-116,Fasteners,427.73,644.09,25
+PROD-217,Pneumatic Unit Mod-117,Pneumatics,137.47,193.96,25
+PROD-218,Heavy Machinery Unit Mod-118,Heavy Machinery,98.87,139.04,15
+PROD-219,Hydraulic Unit Mod-119,Hydraulics,198.62,370.83,100
+PROD-220,Sensors & IoT Unit Mod-120,Sensors & IoT,148.79,226.7,50
+PROD-221,Safety Equipment Unit Mod-121,Safety Equipment,323.77,547.34,25
+PROD-222,Fastener Unit Mod-122,Fasteners,417.66,810.62,25
+PROD-223,Pneumatic Unit Mod-123,Pneumatics,205.68,361.67,25
+PROD-224,Heavy Machinery Unit Mod-124,Heavy Machinery,411.07,809.8,15
+PROD-225,Hydraulic Unit Mod-125,Hydraulics,50.35,97.9,50
+PROD-226,Sensors & IoT Unit Mod-126,Sensors & IoT,211.64,360.11,50
+PROD-227,Safety Equipment Unit Mod-127,Safety Equipment,322.39,663.16,100
+PROD-228,Fastener Unit Mod-128,Fasteners,211.05,379.58,100
+PROD-229,Pneumatic Unit Mod-129,Pneumatics,337.18,607.86,15
+PROD-230,Heavy Machinery Unit Mod-130,Heavy Machinery,63.81,132.18,15
+PROD-231,Hydraulic Unit Mod-131,Hydraulics,449.82,834.06,50
+PROD-232,Sensors & IoT Unit Mod-132,Sensors & IoT,269.9,518.84,25
+PROD-233,Safety Equipment Unit Mod-133,Safety Equipment,224.96,413.62,50
+PROD-234,Fastener Unit Mod-134,Fasteners,102.13,182.71,100
+PROD-235,Pneumatic Unit Mod-135,Pneumatics,436.85,743.74,100
+PROD-236,Heavy Machinery Unit Mod-136,Heavy Machinery,166.66,308.75,25
+PROD-237,Hydraulic Unit Mod-137,Hydraulics,165.17,308.91,50
+PROD-238,Sensors & IoT Unit Mod-138,Sensors & IoT,306.6,505.99,15
+PROD-239,Safety Equipment Unit Mod-139,Safety Equipment,218.3,346.2,50
+PROD-240,Fastener Unit Mod-140,Fasteners,74.27,143.3,15
+PROD-241,Pneumatic Unit Mod-141,Pneumatics,304.51,535.01,100
+PROD-242,Heavy Machinery Unit Mod-142,Heavy Machinery,48.04,83.53,100
+PROD-243,Hydraulic Unit Mod-143,Hydraulics,290.8,558.33,25
+PROD-244,Sensors & IoT Unit Mod-144,Sensors & IoT,138.5,200.58,50
+PROD-245,Safety Equipment Unit Mod-145,Safety Equipment,211.2,395.72,15
+PROD-246,Fastener Unit Mod-146,Fasteners,37.27,67.93,25
+PROD-247,Pneumatic Unit Mod-147,Pneumatics,326.66,517.12,15
+PROD-248,Heavy Machinery Unit Mod-148,Heavy Machinery,259.71,368.76,15
+PROD-249,Hydraulic Unit Mod-149,Hydraulics,221.12,317.99,25
+PROD-250,Sensors & IoT Unit Mod-150,Sensors & IoT,236.81,446.97,50
+PROD-251,Safety Equipment Unit Mod-151,Safety Equipment,201.58,345.08,100
+PROD-252,Fastener Unit Mod-152,Fasteners,128.59,226.76,100
+PROD-253,Pneumatic Unit Mod-153,Pneumatics,106.01,190.77,25
+PROD-254,Heavy Machinery Unit Mod-154,Heavy Machinery,392.21,610.74,100
+PROD-255,Hydraulic Unit Mod-155,Hydraulics,169.45,328.87,50
+PROD-256,Sensors & IoT Unit Mod-156,Sensors & IoT,373.73,583.81,50
+PROD-257,Safety Equipment Unit Mod-157,Safety Equipment,380.93,679.94,100
+PROD-258,Fastener Unit Mod-158,Fasteners,392.74,661.73,100
+PROD-259,Pneumatic Unit Mod-159,Pneumatics,171.68,302.83,100
+PROD-260,Heavy Machinery Unit Mod-160,Heavy Machinery,218.52,347.74,25
+PROD-261,Hydraulic Unit Mod-161,Hydraulics,441.83,675.6,100
+PROD-262,Sensors & IoT Unit Mod-162,Sensors & IoT,124.26,240.03,15
+PROD-263,Safety Equipment Unit Mod-163,Safety Equipment,160.22,273.13,100
+PROD-264,Fastener Unit Mod-164,Fasteners,189.08,349.38,25
+PROD-265,Pneumatic Unit Mod-165,Pneumatics,235.51,324.48,50
+PROD-266,Heavy Machinery Unit Mod-166,Heavy Machinery,394.62,791.47,100
+PROD-267,Hydraulic Unit Mod-167,Hydraulics,67.38,136.97,15
+PROD-268,Sensors & IoT Unit Mod-168,Sensors & IoT,332.04,550.35,25
+PROD-269,Safety Equipment Unit Mod-169,Safety Equipment,56.8,109.97,50
+PROD-270,Fastener Unit Mod-170,Fasteners,168.89,315.74,15
+PROD-271,Pneumatic Unit Mod-171,Pneumatics,387.0,769.84,100
+PROD-272,Heavy Machinery Unit Mod-172,Heavy Machinery,430.51,783.57,100
+PROD-273,Hydraulic Unit Mod-173,Hydraulics,395.76,544.93,15
+PROD-274,Sensors & IoT Unit Mod-174,Sensors & IoT,124.78,232.5,50
+PROD-275,Safety Equipment Unit Mod-175,Safety Equipment,448.91,857.45,100
+PROD-276,Fastener Unit Mod-176,Fasteners,440.79,846.44,15
+PROD-277,Pneumatic Unit Mod-177,Pneumatics,213.56,399.46,15
+PROD-278,Heavy Machinery Unit Mod-178,Heavy Machinery,44.55,86.74,50
+PROD-279,Hydraulic Unit Mod-179,Hydraulics,177.35,296.71,25
+PROD-280,Sensors & IoT Unit Mod-180,Sensors & IoT,250.75,444.94,25

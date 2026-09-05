@@ -1,0 +1,51 @@
+employee_id,name,department,role,email,active_tasks,resolved_tasks
+EMP-701,Sarah Jenkins 1,Customer Operations,Customer Operations Specialist,sarah.jenkins.1@acme.internal,7,76
+EMP-702,Michael Chang 1,Finance & Billing,Finance & Billing Specialist,michael.chang.1@acme.internal,12,157
+EMP-703,Elena Rostova 1,Logistics,Logistics Specialist,elena.rostova.1@acme.internal,7,92
+EMP-704,David Miller 1,Procurement,Procurement Specialist,david.miller.1@acme.internal,8,153
+EMP-705,Amina Al-Mansoor 1,Fulfillment,Fulfillment Specialist,amina.al-mansoor.1@acme.internal,13,99
+EMP-706,Carlos Rodriguez 1,Customer Operations,Customer Operations Specialist,carlos.rodriguez.1@acme.internal,11,147
+EMP-707,Rachel Green 1,Finance & Billing,Finance & Billing Specialist,rachel.green.1@acme.internal,10,117
+EMP-708,James Wilson 1,Logistics,Logistics Specialist,james.wilson.1@acme.internal,4,95
+EMP-709,Priya Patel 1,Procurement,Procurement Specialist,priya.patel.1@acme.internal,11,48
+EMP-710,Thomas Mueller 1,Fulfillment,Fulfillment Specialist,thomas.mueller.1@acme.internal,6,61
+EMP-711,Grace Hopper 1,Customer Operations,Customer Operations Specialist,grace.hopper.1@acme.internal,8,170
+EMP-712,Marcus Vance 1,Finance & Billing,Finance & Billing Specialist,marcus.vance.1@acme.internal,8,30
+EMP-713,Olivia Taylor 1,Logistics,Logistics Specialist,olivia.taylor.1@acme.internal,3,78
+EMP-714,Liam Smith 1,Procurement,Procurement Specialist,liam.smith.1@acme.internal,14,95
+EMP-715,Sophia Lee 1,Fulfillment,Fulfillment Specialist,sophia.lee.1@acme.internal,9,146
+EMP-716,Lucas Scott 1,Customer Operations,Customer Operations Specialist,lucas.scott.1@acme.internal,10,179
+EMP-717,Isabella King 1,Finance & Billing,Finance & Billing Specialist,isabella.king.1@acme.internal,6,160
+EMP-718,Mason Wright 1,Logistics,Logistics Specialist,mason.wright.1@acme.internal,11,137
+EMP-719,Harper Hall 1,Procurement,Procurement Specialist,harper.hall.1@acme.internal,5,98
+EMP-720,Ethan Allen 1,Fulfillment,Fulfillment Specialist,ethan.allen.1@acme.internal,2,139
+EMP-721,Sarah Jenkins 2,Customer Operations,Customer Operations Specialist,sarah.jenkins.2@acme.internal,12,155
+EMP-722,Michael Chang 2,Finance & Billing,Finance & Billing Specialist,michael.chang.2@acme.internal,11,57
+EMP-723,Elena Rostova 2,Logistics,Logistics Specialist,elena.rostova.2@acme.internal,9,141
+EMP-724,David Miller 2,Procurement,Procurement Specialist,david.miller.2@acme.internal,8,110
+EMP-725,Amina Al-Mansoor 2,Fulfillment,Fulfillment Specialist,amina.al-mansoor.2@acme.internal,3,65
+EMP-726,Carlos Rodriguez 2,Customer Operations,Customer Operations Specialist,carlos.rodriguez.2@acme.internal,4,61
+EMP-727,Rachel Green 2,Finance & Billing,Finance & Billing Specialist,rachel.green.2@acme.internal,7,43
+EMP-728,James Wilson 2,Logistics,Logistics Specialist,james.wilson.2@acme.internal,2,47
+EMP-729,Priya Patel 2,Procurement,Procurement Specialist,priya.patel.2@acme.internal,6,57
+EMP-730,Thomas Mueller 2,Fulfillment,Fulfillment Specialist,thomas.mueller.2@acme.internal,10,167
+EMP-731,Grace Hopper 2,Customer Operations,Customer Operations Specialist,grace.hopper.2@acme.internal,6,62
+EMP-732,Marcus Vance 2,Finance & Billing,Finance & Billing Specialist,marcus.vance.2@acme.internal,14,54
+EMP-733,Olivia Taylor 2,Logistics,Logistics Specialist,olivia.taylor.2@acme.internal,13,138
+EMP-734,Liam Smith 2,Procurement,Procurement Specialist,liam.smith.2@acme.internal,5,40
+EMP-735,Sophia Lee 2,Fulfillment,Fulfillment Specialist,sophia.lee.2@acme.internal,12,175
+EMP-736,Lucas Scott 2,Customer Operations,Customer Operations Specialist,lucas.scott.2@acme.internal,2,32
+EMP-737,Isabella King 2,Finance & Billing,Finance & Billing Specialist,isabella.king.2@acme.internal,3,116
+EMP-738,Mason Wright 2,Logistics,Logistics Specialist,mason.wright.2@acme.internal,11,100
+EMP-739,Harper Hall 2,Procurement,Procurement Specialist,harper.hall.2@acme.internal,6,140
+EMP-740,Ethan Allen 2,Fulfillment,Fulfillment Specialist,ethan.allen.2@acme.internal,5,89
+EMP-741,Sarah Jenkins 3,Customer Operations,Customer Operations Specialist,sarah.jenkins.3@acme.internal,5,176
+EMP-742,Michael Chang 3,Finance & Billing,Finance & Billing Specialist,michael.chang.3@acme.internal,14,98
+EMP-743,Elena Rostova 3,Logistics,Logistics Specialist,elena.rostova.3@acme.internal,10,120
+EMP-744,David Miller 3,Procurement,Procurement Specialist,david.miller.3@acme.internal,5,68
+EMP-745,Amina Al-Mansoor 3,Fulfillment,Fulfillment Specialist,amina.al-mansoor.3@acme.internal,2,171
+EMP-746,Carlos Rodriguez 3,Customer Operations,Customer Operations Specialist,carlos.rodriguez.3@acme.internal,11,111
+EMP-747,Rachel Green 3,Finance & Billing,Finance & Billing Specialist,rachel.green.3@acme.internal,14,86
+EMP-748,James Wilson 3,Logistics,Logistics Specialist,james.wilson.3@acme.internal,4,128
+EMP-749,Priya Patel 3,Procurement,Procurement Specialist,priya.patel.3@acme.internal,5,168
+EMP-750,Thomas Mueller 3,Fulfillment,Fulfillment Specialist,thomas.mueller.3@acme.internal,11,34

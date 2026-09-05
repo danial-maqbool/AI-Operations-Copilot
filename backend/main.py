@@ -31,7 +31,7 @@ from backend.api import (
     health, data_sources, catalog, quality, queries,
     dataframe_analysis, metrics, rules, exceptions,
     anomalies, documents, copilot, actions, entity_views,
-    workflows, morning_review, reports, audit
+    workflows, morning_review, reports, audit, demo
 )
 
 # Register routers
@@ -53,6 +53,7 @@ app.include_router(workflows.router, prefix="/api")
 app.include_router(morning_review.router, prefix="/api")
 app.include_router(reports.router, prefix="/api")
 app.include_router(audit.router, prefix="/api")
+app.include_router(demo.router, prefix="/api")
 
 # Static frontend serving when built
 frontend_dist = settings.BASE_DIR / "frontend" / "dist"

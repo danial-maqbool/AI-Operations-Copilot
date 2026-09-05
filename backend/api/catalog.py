@@ -1,4 +1,4 @@
-﻿from typing import List, Optional
+from typing import List, Optional
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
@@ -60,6 +60,11 @@ def profile_all(workspace_id: Optional[str] = None, db: Session = Depends(get_db
             data_health_score=tbl.data_health_score
         ))
     return results
+
+@router.get("/tables", response_model=List[TableProfile])
+def list_all_tables(workspace_id: Optional[str] = None, db: Session = Depends(get_db)):
+    return profile_all(workspace_id=workspace_id, db=db)
+
 
 @router.get("/tables/{table_id}", response_model=TableProfile)
 def get_table_profile(table_id: str, db: Session = Depends(get_db)):

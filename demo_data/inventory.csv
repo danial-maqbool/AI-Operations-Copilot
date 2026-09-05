@@ -1,0 +1,81 @@
+sku,product_id,product_name,warehouse_location,quantity_on_hand,reorder_level,safety_stock,unit_cost
+SKU-PROD-201,PROD-201,Hydraulic Unit Mod-101,WH-Central (IL),103,50,25,378.87
+SKU-PROD-202,PROD-202,Sensors & IoT Unit Mod-102,WH-South (TX),45,25,12,101.26
+SKU-PROD-203,PROD-203,Safety Equipment Unit Mod-103,WH-Central (IL),218,50,25,141.58
+SKU-PROD-204,PROD-204,Fastener Unit Mod-104,WH-Central (IL),364,100,50,321.4
+SKU-PROD-205,PROD-205,Pneumatic Unit Mod-105,WH-South (TX),16,50,25,68.6
+SKU-PROD-206,PROD-206,Heavy Machinery Unit Mod-106,WH-West (NV),116,25,12,224.49
+SKU-PROD-207,PROD-207,Hydraulic Unit Mod-107,WH-West (NV),345,100,50,435.34
+SKU-PROD-208,PROD-208,Sensors & IoT Unit Mod-108,WH-East (NJ),451,100,50,73.49
+SKU-PROD-209,PROD-209,Safety Equipment Unit Mod-109,WH-West (NV),84,15,7,56.48
+SKU-PROD-210,PROD-210,Fastener Unit Mod-110,WH-Central (IL),233,50,25,89.48
+SKU-PROD-211,PROD-211,Pneumatic Unit Mod-111,WH-South (TX),147,100,50,61.2
+SKU-PROD-212,PROD-212,Heavy Machinery Unit Mod-112,WH-West (NV),79,25,12,282.69
+SKU-PROD-213,PROD-213,Hydraulic Unit Mod-113,WH-South (TX),437,100,50,354.67
+SKU-PROD-214,PROD-214,Sensors & IoT Unit Mod-114,WH-West (NV),463,100,50,151.38
+SKU-PROD-215,PROD-215,Safety Equipment Unit Mod-115,WH-West (NV),83,15,7,154.79
+SKU-PROD-216,PROD-216,Fastener Unit Mod-116,WH-South (TX),60,25,12,427.73
+SKU-PROD-217,PROD-217,Pneumatic Unit Mod-117,WH-South (TX),144,25,12,137.47
+SKU-PROD-218,PROD-218,Heavy Machinery Unit Mod-118,WH-Central (IL),3,15,7,98.87
+SKU-PROD-219,PROD-219,Hydraulic Unit Mod-119,WH-West (NV),305,100,50,198.62
+SKU-PROD-220,PROD-220,Sensors & IoT Unit Mod-120,WH-West (NV),207,50,25,148.79
+SKU-PROD-221,PROD-221,Safety Equipment Unit Mod-121,WH-West (NV),124,25,12,323.77
+SKU-PROD-222,PROD-222,Fastener Unit Mod-122,WH-South (TX),37,25,12,417.66
+SKU-PROD-223,PROD-223,Pneumatic Unit Mod-123,WH-East (NJ),70,25,12,205.68
+SKU-PROD-224,PROD-224,Heavy Machinery Unit Mod-124,WH-South (TX),31,15,7,411.07
+SKU-PROD-225,PROD-225,Hydraulic Unit Mod-125,WH-West (NV),273,50,25,50.35
+SKU-PROD-226,PROD-226,Sensors & IoT Unit Mod-126,WH-Central (IL),258,50,25,211.64
+SKU-PROD-227,PROD-227,Safety Equipment Unit Mod-127,WH-West (NV),420,100,50,322.39
+SKU-PROD-228,PROD-228,Fastener Unit Mod-128,WH-Central (IL),222,100,50,211.05
+SKU-PROD-229,PROD-229,Pneumatic Unit Mod-129,WH-Central (IL),57,15,7,337.18
+SKU-PROD-230,PROD-230,Heavy Machinery Unit Mod-130,WH-East (NJ),37,15,7,63.81
+SKU-PROD-231,PROD-231,Hydraulic Unit Mod-131,WH-South (TX),139,50,25,449.82
+SKU-PROD-232,PROD-232,Sensors & IoT Unit Mod-132,WH-West (NV),39,25,12,269.9
+SKU-PROD-233,PROD-233,Safety Equipment Unit Mod-133,WH-Central (IL),48,50,25,224.96
+SKU-PROD-234,PROD-234,Fastener Unit Mod-134,WH-West (NV),156,100,50,102.13
+SKU-PROD-235,PROD-235,Pneumatic Unit Mod-135,WH-South (TX),277,100,50,436.85
+SKU-PROD-236,PROD-236,Heavy Machinery Unit Mod-136,WH-Central (IL),57,25,12,166.66
+SKU-PROD-237,PROD-237,Hydraulic Unit Mod-137,WH-West (NV),93,50,25,165.17
+SKU-PROD-238,PROD-238,Sensors & IoT Unit Mod-138,WH-West (NV),89,15,7,306.6
+SKU-PROD-239,PROD-239,Safety Equipment Unit Mod-139,WH-Central (IL),272,50,25,218.3
+SKU-PROD-240,PROD-240,Fastener Unit Mod-140,WH-South (TX),57,15,7,74.27
+SKU-PROD-241,PROD-241,Pneumatic Unit Mod-141,WH-West (NV),522,100,50,304.51
+SKU-PROD-242,PROD-242,Heavy Machinery Unit Mod-142,WH-West (NV),492,100,50,48.04
+SKU-PROD-243,PROD-243,Hydraulic Unit Mod-143,WH-East (NJ),137,25,12,290.8
+SKU-PROD-244,PROD-244,Sensors & IoT Unit Mod-144,WH-East (NJ),179,50,25,138.5
+SKU-PROD-245,PROD-245,Safety Equipment Unit Mod-145,WH-Central (IL),43,15,7,211.2
+SKU-PROD-246,PROD-246,Fastener Unit Mod-146,WH-South (TX),145,25,12,37.27
+SKU-PROD-247,PROD-247,Pneumatic Unit Mod-147,WH-West (NV),14,15,7,326.66
+SKU-PROD-248,PROD-248,Heavy Machinery Unit Mod-148,WH-South (TX),36,15,7,259.71
+SKU-PROD-249,PROD-249,Hydraulic Unit Mod-149,WH-West (NV),36,25,12,221.12
+SKU-PROD-250,PROD-250,Sensors & IoT Unit Mod-150,WH-East (NJ),197,50,25,236.81
+SKU-PROD-251,PROD-251,Safety Equipment Unit Mod-151,WH-West (NV),342,100,50,201.58
+SKU-PROD-252,PROD-252,Fastener Unit Mod-152,WH-West (NV),454,100,50,128.59
+SKU-PROD-253,PROD-253,Pneumatic Unit Mod-153,WH-South (TX),109,25,12,106.01
+SKU-PROD-254,PROD-254,Heavy Machinery Unit Mod-154,WH-West (NV),531,100,50,392.21
+SKU-PROD-255,PROD-255,Hydraulic Unit Mod-155,WH-Central (IL),87,50,25,169.45
+SKU-PROD-256,PROD-256,Sensors & IoT Unit Mod-156,WH-East (NJ),180,50,25,373.73
+SKU-PROD-257,PROD-257,Safety Equipment Unit Mod-157,WH-West (NV),427,100,50,380.93
+SKU-PROD-258,PROD-258,Fastener Unit Mod-158,WH-Central (IL),578,100,50,392.74
+SKU-PROD-259,PROD-259,Pneumatic Unit Mod-159,WH-East (NJ),441,100,50,171.68
+SKU-PROD-260,PROD-260,Heavy Machinery Unit Mod-160,WH-South (TX),22,25,12,218.52
+SKU-PROD-261,PROD-261,Hydraulic Unit Mod-161,WH-West (NV),575,100,50,441.83
+SKU-PROD-262,PROD-262,Sensors & IoT Unit Mod-162,WH-East (NJ),77,15,7,124.26
+SKU-PROD-263,PROD-263,Safety Equipment Unit Mod-163,WH-East (NJ),181,100,50,160.22
+SKU-PROD-264,PROD-264,Fastener Unit Mod-164,WH-West (NV),39,25,12,189.08
+SKU-PROD-265,PROD-265,Pneumatic Unit Mod-165,WH-East (NJ),186,50,25,235.51
+SKU-PROD-266,PROD-266,Heavy Machinery Unit Mod-166,WH-Central (IL),159,100,50,394.62
+SKU-PROD-267,PROD-267,Hydraulic Unit Mod-167,WH-South (TX),42,15,7,67.38
+SKU-PROD-268,PROD-268,Sensors & IoT Unit Mod-168,WH-West (NV),93,25,12,332.04
+SKU-PROD-269,PROD-269,Safety Equipment Unit Mod-169,WH-South (TX),231,50,25,56.8
+SKU-PROD-270,PROD-270,Fastener Unit Mod-170,WH-South (TX),44,15,7,168.89
+SKU-PROD-271,PROD-271,Pneumatic Unit Mod-171,WH-East (NJ),445,100,50,387.0
+SKU-PROD-272,PROD-272,Heavy Machinery Unit Mod-172,WH-South (TX),536,100,50,430.51
+SKU-PROD-273,PROD-273,Hydraulic Unit Mod-173,WH-West (NV),77,15,7,395.76
+SKU-PROD-274,PROD-274,Sensors & IoT Unit Mod-174,WH-West (NV),68,50,25,124.78
+SKU-PROD-275,PROD-275,Safety Equipment Unit Mod-175,WH-South (TX),29,100,50,448.91
+SKU-PROD-276,PROD-276,Fastener Unit Mod-176,WH-Central (IL),81,15,7,440.79
+SKU-PROD-277,PROD-277,Pneumatic Unit Mod-177,WH-East (NJ),71,15,7,213.56
+SKU-PROD-278,PROD-278,Heavy Machinery Unit Mod-178,WH-West (NV),235,50,25,44.55
+SKU-PROD-279,PROD-279,Hydraulic Unit Mod-179,WH-West (NV),104,25,12,177.35
+SKU-PROD-280,PROD-280,Sensors & IoT Unit Mod-180,WH-South (TX),42,25,12,250.75

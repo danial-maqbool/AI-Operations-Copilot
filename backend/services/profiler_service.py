@@ -253,6 +253,69 @@ class ProfilerService:
         return profiles
 
     @classmethod
+    def profile_table(cls, db: Session, table_id: str) -> Optional[Dict[str, Any]]:
+        tbl = db.query(DataSourceTable).filter(DataSourceTable.id == table_id).first()
+        if not tbl:
+            return None
+        try:
+            df = query_warehouse(f'SELECT * FROM "{tbl.table_name}"')
+        except Exception:
+            return None
+
+        tbl.row_count = len(df)
+        tbl.column_count = len(df.columns)
+        missing_cells = int(df.isnull().sum().sum())
+        duplicate_rows = int(df.duplicated().sum())
+        entity_name, entity_conf, entity_reason = cls.detect_table_entity(tbl.table_name, list(df.columns))
+
+        col_profiles = []
+        for col in df.columns:
+            cp = cls.profile_column(df[col], col, tbl.table_name)
+            col_profiles.append(cp)
+            existing_col = (
+                db.query(DataCatalogColumn)
+                .filter(DataCatalogColumn.table_id == tbl.id, DataCatalogColumn.column_name == col)
+                .first()
+            )
+            if not existing_col:
+                new_col = DataCatalogColumn(
+                    table_id=tbl.id,
+                    column_name=col,
+                    data_type=cp["data_type"],
+                    inferred_role=cp["inferred_role"],
+                    inferred_description=cp["inferred_description"],
+                    null_count=cp["null_count"],
+                    null_percentage=cp["null_percentage"],
+                    unique_count=cp["unique_count"],
+                    sample_values=cp["sample_values"],
+                    is_primary_key=cp["is_primary_key"],
+                    is_foreign_key=cp["is_foreign_key"],
+                    is_sensitive=cp["is_sensitive"]
+                )
+                db.add(new_col)
+            else:
+                existing_col.data_type = cp["data_type"]
+                existing_col.inferred_role = cp["inferred_role"]
+                existing_col.null_count = cp["null_count"]
+                existing_col.null_percentage = cp["null_percentage"]
+                existing_col.unique_count = cp["unique_count"]
+                existing_col.sample_values = cp["sample_values"]
+                existing_col.is_primary_key = cp["is_primary_key"]
+                existing_col.is_foreign_key = cp["is_foreign_key"]
+                existing_col.is_sensitive = cp["is_sensitive"]
+
+        tbl.schema_metadata = {
+            "detected_entity": entity_name,
+            "entity_confidence": entity_conf,
+            "entity_reason": entity_reason,
+            "missing_cells_total": missing_cells,
+            "duplicate_rows": duplicate_rows
+        }
+        db.commit()
+        return tbl.schema_metadata
+
+
+    @classmethod
     def discover_relationships(cls, workspace_id: str, db: Session) -> List[Relationship]:
         tables = (
             db.query(DataSourceTable)

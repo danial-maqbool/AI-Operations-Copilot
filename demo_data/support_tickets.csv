@@ -1,0 +1,321 @@
+ticket_id,customer_id,subject,priority,status,sla_status,created_at,resolved_at,satisfaction_score
+TCK-4001,CUST-1004,Order cancellation inquiry,Medium,Resolved,Within SLA,2026-08-30 08:00:00,2026-09-01 21:00:00,3
+TCK-4002,CUST-1052,Incorrect SKU delivered in shipment,Medium,Resolved,Within SLA,2026-08-30 17:00:00,2026-08-31 12:00:00,4
+TCK-4003,CUST-1023,Invoice payment terms extension request,Medium,Resolved,Within SLA,2026-08-19 09:00:00,2026-08-22 03:00:00,5
+TCK-4004,CUST-1078,Discrepancy on freight surcharge,High,Resolved,Within SLA,2026-09-01 11:00:00,2026-09-02 17:00:00,4
+TCK-4005,CUST-1103,Discrepancy on freight surcharge,Critical,Waiting Customer,At Risk,2026-08-22 16:00:00,,4
+TCK-4006,CUST-1059,Delayed delivery status inquiry,Low,Resolved,Within SLA,2026-08-30 14:00:00,2026-09-01 21:00:00,4
+TCK-4007,CUST-1046,Discrepancy on freight surcharge,High,In Progress,Breached,2026-08-10 14:00:00,,1
+TCK-4008,CUST-1039,Incorrect SKU delivered in shipment,Low,Resolved,Within SLA,2026-08-30 15:00:00,2026-08-30 21:00:00,5
+TCK-4009,CUST-1094,Discrepancy on freight surcharge,Low,Resolved,Within SLA,2026-08-15 11:00:00,2026-08-16 13:00:00,4
+TCK-4010,CUST-1002,Damaged package on delivery,Medium,Waiting Customer,At Risk,2026-08-14 15:00:00,,4
+TCK-4011,CUST-1008,Incorrect SKU delivered in shipment,High,Resolved,Within SLA,2026-08-29 17:00:00,2026-09-01 02:00:00,5
+TCK-4012,CUST-1054,Damaged package on delivery,Medium,Resolved,Within SLA,2026-09-08 10:00:00,2026-09-09 13:00:00,5
+TCK-4013,CUST-1113,Invoice payment terms extension request,Medium,Resolved,Within SLA,2026-08-07 15:00:00,2026-08-08 21:00:00,5
+TCK-4014,CUST-1052,Discrepancy on freight surcharge,High,In Progress,Breached,2026-08-26 08:00:00,,4
+TCK-4015,CUST-1043,Delayed delivery status inquiry,Critical,Waiting Customer,At Risk,2026-08-08 10:00:00,,3
+TCK-4016,CUST-1006,Request for Certificate of Conformance,Medium,Resolved,Within SLA,2026-08-16 09:00:00,2026-08-16 14:00:00,5
+TCK-4017,CUST-1115,Incorrect SKU delivered in shipment,Low,Resolved,Within SLA,2026-09-01 09:00:00,2026-09-02 03:00:00,3
+TCK-4018,CUST-1060,Request for Certificate of Conformance,Critical,Resolved,Within SLA,2026-08-14 17:00:00,2026-08-14 21:00:00,5
+TCK-4019,CUST-1061,Order cancellation inquiry,High,Resolved,Within SLA,2026-08-14 13:00:00,2026-08-16 15:00:00,4
+TCK-4020,CUST-1086,Invoice payment terms extension request,Critical,Waiting Customer,At Risk,2026-09-06 17:00:00,,5
+TCK-4021,CUST-1017,Incorrect SKU delivered in shipment,Medium,Resolved,Within SLA,2026-08-15 11:00:00,2026-08-16 01:00:00,5
+TCK-4022,CUST-1013,Request for Certificate of Conformance,High,Resolved,Within SLA,2026-08-12 11:00:00,2026-08-13 19:00:00,5
+TCK-4023,CUST-1024,Urgent quote for high-volume order,High,Resolved,Within SLA,2026-09-04 17:00:00,2026-09-07 15:00:00,4
+TCK-4024,CUST-1074,Urgent quote for high-volume order,Medium,Resolved,Within SLA,2026-08-26 14:00:00,2026-08-28 17:00:00,5
+TCK-4025,CUST-1019,Delayed delivery status inquiry,Critical,Waiting Customer,At Risk,2026-08-09 11:00:00,,5
+TCK-4026,CUST-1002,Damaged package on delivery,Low,Resolved,Within SLA,2026-08-21 10:00:00,2026-08-23 16:00:00,5
+TCK-4027,CUST-1002,Order cancellation inquiry,Critical,Resolved,Within SLA,2026-08-28 11:00:00,2026-08-30 18:00:00,3
+TCK-4028,CUST-1028,Order cancellation inquiry,High,In Progress,Breached,2026-09-09 15:00:00,,4
+TCK-4029,CUST-1096,Urgent quote for high-volume order,High,Resolved,Within SLA,2026-08-27 10:00:00,2026-08-28 22:00:00,5
+TCK-4030,CUST-1104,Order cancellation inquiry,Critical,Waiting Customer,At Risk,2026-08-12 13:00:00,,4
+TCK-4031,CUST-1034,Invoice payment terms extension request,High,Resolved,Within SLA,2026-09-02 08:00:00,2026-09-03 04:00:00,4
+TCK-4032,CUST-1030,Order cancellation inquiry,Low,Resolved,Within SLA,2026-08-13 16:00:00,2026-08-15 09:00:00,5
+TCK-4033,CUST-1112,Discrepancy on freight surcharge,High,Resolved,Within SLA,2026-09-03 14:00:00,2026-09-04 04:00:00,4
+TCK-4034,CUST-1024,Request for Certificate of Conformance,Medium,Resolved,Within SLA,2026-08-15 11:00:00,2026-08-15 17:00:00,5
+TCK-4035,CUST-1094,Discrepancy on freight surcharge,Medium,Waiting Customer,At Risk,2026-09-08 16:00:00,,4
+TCK-4036,CUST-1103,Discrepancy on freight surcharge,Medium,Resolved,Within SLA,2026-09-08 10:00:00,2026-09-10 13:00:00,5
+TCK-4037,CUST-1013,Damaged package on delivery,Medium,Resolved,Within SLA,2026-08-15 16:00:00,2026-08-18 02:00:00,5
+TCK-4038,CUST-1036,Delayed delivery status inquiry,Critical,Resolved,Within SLA,2026-08-24 14:00:00,2026-08-27 12:00:00,3
+TCK-4039,CUST-1115,Order cancellation inquiry,Critical,Resolved,Within SLA,2026-08-26 10:00:00,2026-08-28 04:00:00,4
+TCK-4040,CUST-1010,Urgent quote for high-volume order,High,Waiting Customer,At Risk,2026-08-19 17:00:00,,4
+TCK-4041,CUST-1009,Delayed delivery status inquiry,Critical,Resolved,Within SLA,2026-08-14 10:00:00,2026-08-17 03:00:00,5
+TCK-4042,CUST-1098,Incorrect SKU delivered in shipment,Critical,In Progress,Breached,2026-08-16 14:00:00,,3
+TCK-4043,CUST-1076,Incorrect SKU delivered in shipment,Medium,Resolved,Within SLA,2026-08-28 09:00:00,2026-08-29 17:00:00,5
+TCK-4044,CUST-1018,Request for Certificate of Conformance,Low,Resolved,Within SLA,2026-08-15 11:00:00,2026-08-17 23:00:00,5
+TCK-4045,CUST-1087,Urgent quote for high-volume order,High,Waiting Customer,At Risk,2026-08-06 09:00:00,,4
+TCK-4046,CUST-1040,Invoice payment terms extension request,Critical,Resolved,Within SLA,2026-08-20 15:00:00,2026-08-22 09:00:00,4
+TCK-4047,CUST-1070,Order cancellation inquiry,Medium,Resolved,Within SLA,2026-08-10 13:00:00,2026-08-12 03:00:00,4
+TCK-4048,CUST-1049,Urgent quote for high-volume order,Low,Resolved,Within SLA,2026-09-04 14:00:00,2026-09-05 15:00:00,5
+TCK-4049,CUST-1089,Order cancellation inquiry,High,In Progress,Breached,2026-08-20 16:00:00,,4
+TCK-4050,CUST-1012,Discrepancy on freight surcharge,Medium,Waiting Customer,At Risk,2026-09-06 14:00:00,,3
+TCK-4051,CUST-1008,Invoice payment terms extension request,High,Resolved,Within SLA,2026-08-23 12:00:00,2026-08-26 09:00:00,5
+TCK-4052,CUST-1054,Urgent quote for high-volume order,High,Resolved,Within SLA,2026-08-11 08:00:00,2026-08-12 00:00:00,5
+TCK-4053,CUST-1104,Order cancellation inquiry,Medium,Resolved,Within SLA,2026-09-06 11:00:00,2026-09-08 22:00:00,5
+TCK-4054,CUST-1035,Invoice payment terms extension request,Critical,Resolved,Within SLA,2026-09-10 17:00:00,2026-09-12 21:00:00,4
+TCK-4055,CUST-1067,Request for Certificate of Conformance,Low,Waiting Customer,At Risk,2026-08-12 17:00:00,,5
+TCK-4056,CUST-1013,Invoice payment terms extension request,Low,Resolved,Within SLA,2026-08-21 13:00:00,2026-08-23 22:00:00,3
+TCK-4057,CUST-1092,Delayed delivery status inquiry,High,Resolved,Within SLA,2026-09-03 15:00:00,2026-09-06 13:00:00,4
+TCK-4058,CUST-1052,Request for Certificate of Conformance,Low,Resolved,Within SLA,2026-08-19 17:00:00,2026-08-20 20:00:00,4
+TCK-4059,CUST-1081,Discrepancy on freight surcharge,Low,Resolved,Within SLA,2026-08-24 14:00:00,2026-08-24 21:00:00,5
+TCK-4060,CUST-1059,Urgent quote for high-volume order,High,Waiting Customer,At Risk,2026-08-28 13:00:00,,5
+TCK-4061,CUST-1036,Order cancellation inquiry,Low,Resolved,Within SLA,2026-08-26 15:00:00,2026-08-28 04:00:00,5
+TCK-4062,CUST-1027,Discrepancy on freight surcharge,Critical,Resolved,Within SLA,2026-08-28 10:00:00,2026-08-31 05:00:00,4
+TCK-4063,CUST-1043,Discrepancy on freight surcharge,Medium,Resolved,Within SLA,2026-08-26 12:00:00,2026-08-27 04:00:00,5
+TCK-4064,CUST-1012,Request for Certificate of Conformance,High,Resolved,Within SLA,2026-09-06 10:00:00,2026-09-08 14:00:00,5
+TCK-4065,CUST-1034,Order cancellation inquiry,High,Waiting Customer,At Risk,2026-08-27 15:00:00,,5
+TCK-4066,CUST-1097,Damaged package on delivery,Medium,Resolved,Within SLA,2026-08-26 08:00:00,2026-08-27 02:00:00,5
+TCK-4067,CUST-1075,Urgent quote for high-volume order,High,Resolved,Within SLA,2026-09-10 16:00:00,2026-09-11 18:00:00,3
+TCK-4068,CUST-1080,Invoice payment terms extension request,Medium,Resolved,Within SLA,2026-08-11 09:00:00,2026-08-13 16:00:00,5
+TCK-4069,CUST-1019,Discrepancy on freight surcharge,High,Resolved,Within SLA,2026-08-31 10:00:00,2026-09-02 15:00:00,4
+TCK-4070,CUST-1109,Urgent quote for high-volume order,Low,Waiting Customer,At Risk,2026-08-26 11:00:00,,3
+TCK-4071,CUST-1106,Delayed delivery status inquiry,Medium,Resolved,Within SLA,2026-09-10 10:00:00,2026-09-12 01:00:00,4
+TCK-4072,CUST-1064,Incorrect SKU delivered in shipment,Medium,Resolved,Within SLA,2026-08-21 11:00:00,2026-08-23 23:00:00,5
+TCK-4073,CUST-1104,Incorrect SKU delivered in shipment,Medium,Resolved,Within SLA,2026-08-06 12:00:00,2026-08-07 23:00:00,4
+TCK-4074,CUST-1110,Order cancellation inquiry,Critical,Resolved,Within SLA,2026-09-01 16:00:00,2026-09-02 20:00:00,3
+TCK-4075,CUST-1024,Request for Certificate of Conformance,Critical,Waiting Customer,At Risk,2026-08-22 13:00:00,,5
+TCK-4076,CUST-1056,Discrepancy on freight surcharge,High,Resolved,Within SLA,2026-08-21 13:00:00,2026-08-23 14:00:00,4
+TCK-4077,CUST-1089,Damaged package on delivery,High,In Progress,Breached,2026-08-21 16:00:00,,4
+TCK-4078,CUST-1017,Invoice payment terms extension request,Critical,Resolved,Within SLA,2026-09-09 13:00:00,2026-09-10 06:00:00,4
+TCK-4079,CUST-1030,Discrepancy on freight surcharge,Medium,Resolved,Within SLA,2026-09-04 12:00:00,2026-09-04 22:00:00,3
+TCK-4080,CUST-1080,Order cancellation inquiry,Critical,Waiting Customer,At Risk,2026-09-02 09:00:00,,5
+TCK-4081,CUST-1003,Order cancellation inquiry,Low,Resolved,Within SLA,2026-08-28 15:00:00,2026-08-29 13:00:00,4
+TCK-4082,CUST-1088,Discrepancy on freight surcharge,Low,Resolved,Within SLA,2026-08-23 17:00:00,2026-08-25 05:00:00,5
+TCK-4083,CUST-1004,Order cancellation inquiry,Critical,Resolved,Within SLA,2026-08-14 14:00:00,2026-08-15 21:00:00,5
+TCK-4084,CUST-1058,Urgent quote for high-volume order,High,In Progress,Breached,2026-08-27 11:00:00,,4
+TCK-4085,CUST-1103,Request for Certificate of Conformance,Medium,Waiting Customer,At Risk,2026-09-09 17:00:00,,5
+TCK-4086,CUST-1111,Delayed delivery status inquiry,Low,Resolved,Within SLA,2026-08-28 17:00:00,2026-08-29 12:00:00,4
+TCK-4087,CUST-1079,Invoice payment terms extension request,Critical,Resolved,Within SLA,2026-08-16 11:00:00,2026-08-17 22:00:00,4
+TCK-4088,CUST-1100,Damaged package on delivery,Medium,Resolved,Within SLA,2026-08-07 15:00:00,2026-08-08 10:00:00,5
+TCK-4089,CUST-1012,Invoice payment terms extension request,Critical,Resolved,Within SLA,2026-08-30 14:00:00,2026-09-01 18:00:00,5
+TCK-4090,CUST-1061,Damaged package on delivery,High,Waiting Customer,At Risk,2026-08-17 09:00:00,,5
+TCK-4091,CUST-1046,Damaged package on delivery,Critical,In Progress,Breached,2026-08-22 15:00:00,,4
+TCK-4092,CUST-1024,Urgent quote for high-volume order,Critical,Resolved,Within SLA,2026-08-18 11:00:00,2026-08-20 11:00:00,5
+TCK-4093,CUST-1082,Invoice payment terms extension request,High,Resolved,Within SLA,2026-09-03 09:00:00,2026-09-06 08:00:00,5
+TCK-4094,CUST-1003,Delayed delivery status inquiry,Low,Resolved,Within SLA,2026-08-29 09:00:00,2026-08-30 10:00:00,4
+TCK-4095,CUST-1068,Delayed delivery status inquiry,Low,Waiting Customer,At Risk,2026-08-26 14:00:00,,5
+TCK-4096,CUST-1004,Discrepancy on freight surcharge,Low,Resolved,Within SLA,2026-08-17 11:00:00,2026-08-20 06:00:00,5
+TCK-4097,CUST-1069,Incorrect SKU delivered in shipment,High,Resolved,Within SLA,2026-08-12 10:00:00,2026-08-14 13:00:00,4
+TCK-4098,CUST-1023,Order cancellation inquiry,Medium,Resolved,Within SLA,2026-09-07 10:00:00,2026-09-09 22:00:00,4
+TCK-4099,CUST-1080,Delayed delivery status inquiry,Low,Resolved,Within SLA,2026-08-25 12:00:00,2026-08-26 05:00:00,5
+TCK-4100,CUST-1088,Damaged package on delivery,Medium,Waiting Customer,At Risk,2026-08-12 15:00:00,,5
+TCK-4101,CUST-1078,Damaged package on delivery,High,Resolved,Within SLA,2026-09-04 16:00:00,2026-09-06 21:00:00,3
+TCK-4102,CUST-1015,Invoice payment terms extension request,High,Resolved,Within SLA,2026-08-21 13:00:00,2026-08-22 11:00:00,5
+TCK-4103,CUST-1105,Order cancellation inquiry,Medium,Resolved,Within SLA,2026-08-31 08:00:00,2026-09-02 09:00:00,4
+TCK-4104,CUST-1118,Order cancellation inquiry,Low,Resolved,Within SLA,2026-09-08 09:00:00,2026-09-10 06:00:00,4
+TCK-4105,CUST-1073,Request for Certificate of Conformance,Medium,Waiting Customer,At Risk,2026-08-24 13:00:00,,5
+TCK-4106,CUST-1058,Incorrect SKU delivered in shipment,High,Resolved,Within SLA,2026-09-02 14:00:00,2026-09-05 01:00:00,3
+TCK-4107,CUST-1011,Order cancellation inquiry,Low,Resolved,Within SLA,2026-09-06 09:00:00,2026-09-08 06:00:00,4
+TCK-4108,CUST-1062,Request for Certificate of Conformance,High,Resolved,Within SLA,2026-09-06 12:00:00,2026-09-06 23:00:00,4
+TCK-4109,CUST-1107,Delayed delivery status inquiry,Medium,Resolved,Within SLA,2026-08-11 12:00:00,2026-08-12 14:00:00,5
+TCK-4110,CUST-1041,Delayed delivery status inquiry,Low,Waiting Customer,At Risk,2026-08-09 12:00:00,,3
+TCK-4111,CUST-1025,Discrepancy on freight surcharge,Low,Resolved,Within SLA,2026-09-02 16:00:00,2026-09-05 15:00:00,5
+TCK-4112,CUST-1066,Discrepancy on freight surcharge,Low,Resolved,Within SLA,2026-08-19 09:00:00,2026-08-21 23:00:00,5
+TCK-4113,CUST-1115,Incorrect SKU delivered in shipment,High,Resolved,Within SLA,2026-08-10 11:00:00,2026-08-13 06:00:00,5
+TCK-4114,CUST-1074,Delayed delivery status inquiry,Low,Resolved,Within SLA,2026-08-30 11:00:00,2026-08-31 05:00:00,5
+TCK-4115,CUST-1001,Incorrect SKU delivered in shipment,High,Waiting Customer,At Risk,2026-08-17 14:00:00,,5
+TCK-4116,CUST-1048,Request for Certificate of Conformance,Low,Resolved,Within SLA,2026-08-15 10:00:00,2026-08-16 21:00:00,4
+TCK-4117,CUST-1086,Urgent quote for high-volume order,Critical,Resolved,Within SLA,2026-08-25 11:00:00,2026-08-27 01:00:00,3
+TCK-4118,CUST-1089,Delayed delivery status inquiry,Critical,Resolved,Within SLA,2026-09-01 14:00:00,2026-09-03 05:00:00,5
+TCK-4119,CUST-1105,Order cancellation inquiry,High,In Progress,Breached,2026-08-06 14:00:00,,4
+TCK-4120,CUST-1090,Order cancellation inquiry,Medium,Waiting Customer,At Risk,2026-08-20 09:00:00,,5
+TCK-4121,CUST-1015,Invoice payment terms extension request,Medium,Resolved,Within SLA,2026-09-06 09:00:00,2026-09-07 12:00:00,4
+TCK-4122,CUST-1042,Damaged package on delivery,High,Resolved,Within SLA,2026-08-31 12:00:00,2026-09-03 12:00:00,5
+TCK-4123,CUST-1037,Urgent quote for high-volume order,Low,Resolved,Within SLA,2026-08-13 14:00:00,2026-08-14 19:00:00,4
+TCK-4124,CUST-1072,Order cancellation inquiry,Medium,Resolved,Within SLA,2026-08-14 16:00:00,2026-08-15 00:00:00,3
+TCK-4125,CUST-1062,Invoice payment terms extension request,Low,Waiting Customer,At Risk,2026-08-20 08:00:00,,3
+TCK-4126,CUST-1024,Invoice payment terms extension request,Low,Resolved,Within SLA,2026-08-21 14:00:00,2026-08-23 17:00:00,3
+TCK-4127,CUST-1095,Damaged package on delivery,Critical,Resolved,Within SLA,2026-08-08 16:00:00,2026-08-09 20:00:00,5
+TCK-4128,CUST-1093,Discrepancy on freight surcharge,Low,Resolved,Within SLA,2026-08-06 10:00:00,2026-08-08 09:00:00,5
+TCK-4129,CUST-1118,Damaged package on delivery,High,Resolved,Within SLA,2026-09-04 11:00:00,2026-09-04 22:00:00,3
+TCK-4130,CUST-1049,Damaged package on delivery,High,Waiting Customer,At Risk,2026-09-07 09:00:00,,5
+TCK-4131,CUST-1024,Incorrect SKU delivered in shipment,High,Resolved,Within SLA,2026-09-03 08:00:00,2026-09-05 20:00:00,4
+TCK-4132,CUST-1108,Incorrect SKU delivered in shipment,High,Resolved,Within SLA,2026-09-10 10:00:00,2026-09-11 08:00:00,4
+TCK-4133,CUST-1041,Delayed delivery status inquiry,Low,Resolved,Within SLA,2026-08-10 14:00:00,2026-08-13 12:00:00,4
+TCK-4134,CUST-1003,Damaged package on delivery,High,Resolved,Within SLA,2026-08-29 08:00:00,2026-08-30 06:00:00,4
+TCK-4135,CUST-1088,Incorrect SKU delivered in shipment,Low,Waiting Customer,At Risk,2026-08-30 08:00:00,,4
+TCK-4136,CUST-1008,Request for Certificate of Conformance,Low,Resolved,Within SLA,2026-08-20 08:00:00,2026-08-20 21:00:00,4
+TCK-4137,CUST-1084,Order cancellation inquiry,Critical,Resolved,Within SLA,2026-08-24 17:00:00,2026-08-26 22:00:00,3
+TCK-4138,CUST-1117,Incorrect SKU delivered in shipment,Critical,Resolved,Within SLA,2026-08-22 13:00:00,2026-08-25 03:00:00,3
+TCK-4139,CUST-1118,Damaged package on delivery,Critical,Resolved,Within SLA,2026-09-09 13:00:00,2026-09-10 21:00:00,5
+TCK-4140,CUST-1037,Damaged package on delivery,Critical,In Progress,Breached,2026-08-22 10:00:00,,5
+TCK-4141,CUST-1095,Delayed delivery status inquiry,Critical,Resolved,Within SLA,2026-08-25 10:00:00,2026-08-25 19:00:00,3
+TCK-4142,CUST-1053,Incorrect SKU delivered in shipment,Critical,Resolved,Within SLA,2026-08-14 13:00:00,2026-08-15 19:00:00,3
+TCK-4143,CUST-1054,Request for Certificate of Conformance,Critical,Resolved,Within SLA,2026-09-03 15:00:00,2026-09-05 20:00:00,3
+TCK-4144,CUST-1047,Discrepancy on freight surcharge,High,Resolved,Within SLA,2026-08-31 10:00:00,2026-09-03 09:00:00,5
+TCK-4145,CUST-1032,Incorrect SKU delivered in shipment,Medium,Waiting Customer,At Risk,2026-08-18 17:00:00,,5
+TCK-4146,CUST-1116,Order cancellation inquiry,Critical,Resolved,Within SLA,2026-08-29 12:00:00,2026-08-30 19:00:00,3
+TCK-4147,CUST-1019,Order cancellation inquiry,Low,Resolved,Within SLA,2026-09-09 15:00:00,2026-09-11 09:00:00,4
+TCK-4148,CUST-1053,Delayed delivery status inquiry,Medium,Resolved,Within SLA,2026-08-19 13:00:00,2026-08-20 13:00:00,5
+TCK-4149,CUST-1050,Request for Certificate of Conformance,Medium,Resolved,Within SLA,2026-09-03 08:00:00,2026-09-04 14:00:00,3
+TCK-4150,CUST-1073,Damaged package on delivery,High,Waiting Customer,At Risk,2026-08-15 14:00:00,,4
+TCK-4151,CUST-1101,Incorrect SKU delivered in shipment,Medium,Resolved,Within SLA,2026-09-01 13:00:00,2026-09-04 04:00:00,5
+TCK-4152,CUST-1112,Damaged package on delivery,Critical,Resolved,Within SLA,2026-08-26 17:00:00,2026-08-29 16:00:00,5
+TCK-4153,CUST-1081,Delayed delivery status inquiry,Low,Resolved,Within SLA,2026-08-10 09:00:00,2026-08-10 15:00:00,4
+TCK-4154,CUST-1118,Delayed delivery status inquiry,High,In Progress,Breached,2026-08-11 13:00:00,,5
+TCK-4155,CUST-1026,Damaged package on delivery,Medium,Waiting Customer,At Risk,2026-08-25 09:00:00,,5
+TCK-4156,CUST-1080,Discrepancy on freight surcharge,Critical,Resolved,Within SLA,2026-09-05 13:00:00,2026-09-06 15:00:00,5
+TCK-4157,CUST-1039,Invoice payment terms extension request,Medium,Resolved,Within SLA,2026-08-15 10:00:00,2026-08-17 19:00:00,4
+TCK-4158,CUST-1069,Request for Certificate of Conformance,Medium,Resolved,Within SLA,2026-09-10 16:00:00,2026-09-13 08:00:00,5
+TCK-4159,CUST-1036,Incorrect SKU delivered in shipment,Low,Resolved,Within SLA,2026-08-15 15:00:00,2026-08-16 07:00:00,4
+TCK-4160,CUST-1018,Request for Certificate of Conformance,Critical,Waiting Customer,At Risk,2026-08-30 15:00:00,,5
+TCK-4161,CUST-1099,Delayed delivery status inquiry,High,In Progress,Breached,2026-09-03 17:00:00,,4
+TCK-4162,CUST-1024,Order cancellation inquiry,Low,Resolved,Within SLA,2026-09-06 17:00:00,2026-09-08 17:00:00,5
+TCK-4163,CUST-1011,Discrepancy on freight surcharge,Low,Resolved,Within SLA,2026-08-17 10:00:00,2026-08-19 04:00:00,5
+TCK-4164,CUST-1051,Damaged package on delivery,Low,Resolved,Within SLA,2026-08-18 13:00:00,2026-08-20 06:00:00,5
+TCK-4165,CUST-1102,Invoice payment terms extension request,High,Waiting Customer,At Risk,2026-09-06 08:00:00,,4
+TCK-4166,CUST-1115,Request for Certificate of Conformance,Medium,Resolved,Within SLA,2026-08-29 12:00:00,2026-08-30 16:00:00,4
+TCK-4167,CUST-1036,Delayed delivery status inquiry,Critical,Resolved,Within SLA,2026-08-26 10:00:00,2026-08-26 20:00:00,5
+TCK-4168,CUST-1031,Urgent quote for high-volume order,High,In Progress,Breached,2026-09-03 14:00:00,,5
+TCK-4169,CUST-1006,Urgent quote for high-volume order,Critical,Resolved,Within SLA,2026-08-11 13:00:00,2026-08-11 21:00:00,5
+TCK-4170,CUST-1112,Delayed delivery status inquiry,Low,Waiting Customer,At Risk,2026-08-25 14:00:00,,5
+TCK-4171,CUST-1116,Order cancellation inquiry,Critical,Resolved,Within SLA,2026-08-30 08:00:00,2026-08-31 22:00:00,5
+TCK-4172,CUST-1049,Discrepancy on freight surcharge,High,Resolved,Within SLA,2026-09-07 14:00:00,2026-09-09 22:00:00,5
+TCK-4173,CUST-1044,Damaged package on delivery,High,Resolved,Within SLA,2026-08-22 16:00:00,2026-08-23 20:00:00,3
+TCK-4174,CUST-1037,Urgent quote for high-volume order,Low,Resolved,Within SLA,2026-09-03 09:00:00,2026-09-05 05:00:00,4
+TCK-4175,CUST-1115,Invoice payment terms extension request,Low,Waiting Customer,At Risk,2026-08-14 09:00:00,,5
+TCK-4176,CUST-1010,Damaged package on delivery,High,Resolved,Within SLA,2026-08-10 10:00:00,2026-08-11 20:00:00,4
+TCK-4177,CUST-1111,Invoice payment terms extension request,Low,Resolved,Within SLA,2026-08-06 13:00:00,2026-08-07 02:00:00,5
+TCK-4178,CUST-1075,Order cancellation inquiry,High,Resolved,Within SLA,2026-08-12 17:00:00,2026-08-13 12:00:00,4
+TCK-4179,CUST-1091,Damaged package on delivery,Medium,Resolved,Within SLA,2026-08-11 10:00:00,2026-08-12 01:00:00,5
+TCK-4180,CUST-1012,Delayed delivery status inquiry,Critical,Waiting Customer,At Risk,2026-08-20 11:00:00,,4
+TCK-4181,CUST-1092,Invoice payment terms extension request,Critical,Resolved,Within SLA,2026-08-26 16:00:00,2026-08-27 20:00:00,3
+TCK-4182,CUST-1105,Incorrect SKU delivered in shipment,Critical,In Progress,Breached,2026-08-17 15:00:00,,5
+TCK-4183,CUST-1094,Delayed delivery status inquiry,Critical,Resolved,Within SLA,2026-08-17 16:00:00,2026-08-17 20:00:00,4
+TCK-4184,CUST-1023,Incorrect SKU delivered in shipment,High,Resolved,Within SLA,2026-08-15 16:00:00,2026-08-16 20:00:00,5
+TCK-4185,CUST-1016,Invoice payment terms extension request,Medium,Waiting Customer,At Risk,2026-08-17 13:00:00,,5
+TCK-4186,CUST-1021,Request for Certificate of Conformance,High,Resolved,Within SLA,2026-09-01 16:00:00,2026-09-03 08:00:00,5
+TCK-4187,CUST-1055,Urgent quote for high-volume order,High,Resolved,Within SLA,2026-08-21 16:00:00,2026-08-21 20:00:00,5
+TCK-4188,CUST-1114,Urgent quote for high-volume order,High,Resolved,Within SLA,2026-08-16 09:00:00,2026-08-16 20:00:00,4
+TCK-4189,CUST-1064,Discrepancy on freight surcharge,Low,Resolved,Within SLA,2026-09-02 09:00:00,2026-09-04 22:00:00,4
+TCK-4190,CUST-1096,Invoice payment terms extension request,High,Waiting Customer,At Risk,2026-08-29 17:00:00,,5
+TCK-4191,CUST-1009,Urgent quote for high-volume order,High,Resolved,Within SLA,2026-09-03 13:00:00,2026-09-06 06:00:00,5
+TCK-4192,CUST-1064,Urgent quote for high-volume order,Critical,Resolved,Within SLA,2026-08-26 16:00:00,2026-08-27 20:00:00,5
+TCK-4193,CUST-1076,Damaged package on delivery,Low,Resolved,Within SLA,2026-08-28 14:00:00,2026-08-31 05:00:00,3
+TCK-4194,CUST-1042,Request for Certificate of Conformance,Critical,Resolved,Within SLA,2026-09-04 15:00:00,2026-09-05 14:00:00,5
+TCK-4195,CUST-1095,Request for Certificate of Conformance,Critical,Waiting Customer,At Risk,2026-08-07 10:00:00,,5
+TCK-4196,CUST-1049,Damaged package on delivery,Critical,In Progress,Breached,2026-08-29 08:00:00,,3
+TCK-4197,CUST-1102,Damaged package on delivery,Medium,Resolved,Within SLA,2026-08-17 11:00:00,2026-08-18 03:00:00,4
+TCK-4198,CUST-1051,Order cancellation inquiry,Medium,Resolved,Within SLA,2026-08-23 13:00:00,2026-08-24 18:00:00,4
+TCK-4199,CUST-1064,Request for Certificate of Conformance,Medium,Resolved,Within SLA,2026-08-25 16:00:00,2026-08-27 07:00:00,5
+TCK-4200,CUST-1025,Order cancellation inquiry,Critical,Waiting Customer,At Risk,2026-09-02 14:00:00,,5
+TCK-4201,CUST-1063,Delayed delivery status inquiry,High,Resolved,Within SLA,2026-08-12 09:00:00,2026-08-14 06:00:00,5
+TCK-4202,CUST-1062,Urgent quote for high-volume order,Medium,Resolved,Within SLA,2026-08-21 16:00:00,2026-08-24 11:00:00,5
+TCK-4203,CUST-1054,Order cancellation inquiry,Low,Resolved,Within SLA,2026-08-25 10:00:00,2026-08-27 09:00:00,5
+TCK-4204,CUST-1040,Request for Certificate of Conformance,Low,Resolved,Within SLA,2026-08-14 16:00:00,2026-08-16 08:00:00,5
+TCK-4205,CUST-1093,Discrepancy on freight surcharge,Medium,Waiting Customer,At Risk,2026-08-29 17:00:00,,3
+TCK-4206,CUST-1009,Delayed delivery status inquiry,Critical,Resolved,Within SLA,2026-08-29 14:00:00,2026-08-31 01:00:00,5
+TCK-4207,CUST-1042,Incorrect SKU delivered in shipment,High,Resolved,Within SLA,2026-09-05 12:00:00,2026-09-07 11:00:00,4
+TCK-4208,CUST-1102,Discrepancy on freight surcharge,Medium,Resolved,Within SLA,2026-08-14 13:00:00,2026-08-15 22:00:00,5
+TCK-4209,CUST-1076,Incorrect SKU delivered in shipment,Medium,Resolved,Within SLA,2026-09-06 17:00:00,2026-09-09 09:00:00,4
+TCK-4210,CUST-1041,Invoice payment terms extension request,Critical,In Progress,Breached,2026-08-15 17:00:00,,5
+TCK-4211,CUST-1011,Order cancellation inquiry,Critical,Resolved,Within SLA,2026-08-23 09:00:00,2026-08-25 22:00:00,3
+TCK-4212,CUST-1100,Incorrect SKU delivered in shipment,High,Resolved,Within SLA,2026-08-15 13:00:00,2026-08-16 00:00:00,3
+TCK-4213,CUST-1032,Incorrect SKU delivered in shipment,Low,Resolved,Within SLA,2026-08-26 13:00:00,2026-08-29 06:00:00,4
+TCK-4214,CUST-1019,Urgent quote for high-volume order,High,Resolved,Within SLA,2026-09-06 13:00:00,2026-09-09 13:00:00,5
+TCK-4215,CUST-1106,Incorrect SKU delivered in shipment,Low,Waiting Customer,At Risk,2026-08-24 08:00:00,,5
+TCK-4216,CUST-1114,Incorrect SKU delivered in shipment,High,Resolved,Within SLA,2026-08-21 14:00:00,2026-08-24 00:00:00,5
+TCK-4217,CUST-1105,Delayed delivery status inquiry,High,In Progress,Breached,2026-08-22 11:00:00,,5
+TCK-4218,CUST-1038,Delayed delivery status inquiry,Low,Resolved,Within SLA,2026-09-01 09:00:00,2026-09-03 12:00:00,3
+TCK-4219,CUST-1100,Damaged package on delivery,Critical,Resolved,Within SLA,2026-08-30 16:00:00,2026-08-31 16:00:00,4
+TCK-4220,CUST-1057,Discrepancy on freight surcharge,Low,Waiting Customer,At Risk,2026-08-23 15:00:00,,5
+TCK-4221,CUST-1026,Order cancellation inquiry,High,Resolved,Within SLA,2026-08-16 17:00:00,2026-08-17 13:00:00,5
+TCK-4222,CUST-1003,Invoice payment terms extension request,Low,Resolved,Within SLA,2026-08-26 16:00:00,2026-08-29 09:00:00,5
+TCK-4223,CUST-1019,Discrepancy on freight surcharge,Critical,Resolved,Within SLA,2026-09-10 08:00:00,2026-09-12 19:00:00,5
+TCK-4224,CUST-1042,Request for Certificate of Conformance,Medium,Resolved,Within SLA,2026-08-26 17:00:00,2026-08-27 01:00:00,5
+TCK-4225,CUST-1037,Discrepancy on freight surcharge,Low,Waiting Customer,At Risk,2026-09-07 08:00:00,,5
+TCK-4226,CUST-1092,Damaged package on delivery,Critical,Resolved,Within SLA,2026-08-10 09:00:00,2026-08-11 06:00:00,5
+TCK-4227,CUST-1014,Damaged package on delivery,Medium,Resolved,Within SLA,2026-08-11 13:00:00,2026-08-13 14:00:00,5
+TCK-4228,CUST-1011,Request for Certificate of Conformance,High,Resolved,Within SLA,2026-08-10 15:00:00,2026-08-12 22:00:00,4
+TCK-4229,CUST-1008,Request for Certificate of Conformance,Critical,Resolved,Within SLA,2026-08-15 16:00:00,2026-08-16 07:00:00,5
+TCK-4230,CUST-1058,Damaged package on delivery,Low,Waiting Customer,At Risk,2026-08-22 11:00:00,,5
+TCK-4231,CUST-1008,Delayed delivery status inquiry,Low,Resolved,Within SLA,2026-08-20 15:00:00,2026-08-21 00:00:00,4
+TCK-4232,CUST-1029,Incorrect SKU delivered in shipment,Medium,Resolved,Within SLA,2026-08-14 16:00:00,2026-08-16 12:00:00,5
+TCK-4233,CUST-1050,Request for Certificate of Conformance,Low,Resolved,Within SLA,2026-09-07 12:00:00,2026-09-10 07:00:00,4
+TCK-4234,CUST-1086,Request for Certificate of Conformance,Low,Resolved,Within SLA,2026-08-08 11:00:00,2026-08-08 19:00:00,5
+TCK-4235,CUST-1030,Order cancellation inquiry,Low,Waiting Customer,At Risk,2026-08-28 09:00:00,,4
+TCK-4236,CUST-1113,Discrepancy on freight surcharge,Medium,Resolved,Within SLA,2026-08-31 11:00:00,2026-09-01 10:00:00,4
+TCK-4237,CUST-1001,Urgent quote for high-volume order,High,Resolved,Within SLA,2026-09-10 13:00:00,2026-09-13 10:00:00,3
+TCK-4238,CUST-1021,Incorrect SKU delivered in shipment,High,In Progress,Breached,2026-08-27 11:00:00,,5
+TCK-4239,CUST-1115,Urgent quote for high-volume order,Critical,Resolved,Within SLA,2026-08-13 12:00:00,2026-08-16 01:00:00,4
+TCK-4240,CUST-1058,Request for Certificate of Conformance,Medium,Waiting Customer,At Risk,2026-08-17 09:00:00,,4
+TCK-4241,CUST-1050,Invoice payment terms extension request,Medium,Resolved,Within SLA,2026-08-18 17:00:00,2026-08-20 11:00:00,5
+TCK-4242,CUST-1087,Incorrect SKU delivered in shipment,High,Resolved,Within SLA,2026-08-29 15:00:00,2026-08-30 01:00:00,5
+TCK-4243,CUST-1081,Incorrect SKU delivered in shipment,High,Resolved,Within SLA,2026-08-19 16:00:00,2026-08-19 23:00:00,5
+TCK-4244,CUST-1002,Incorrect SKU delivered in shipment,Medium,Resolved,Within SLA,2026-08-27 11:00:00,2026-08-30 06:00:00,5
+TCK-4245,CUST-1050,Discrepancy on freight surcharge,Critical,In Progress,Breached,2026-08-31 17:00:00,,5
+TCK-4246,CUST-1118,Order cancellation inquiry,Critical,Resolved,Within SLA,2026-09-10 17:00:00,2026-09-12 09:00:00,5
+TCK-4247,CUST-1110,Incorrect SKU delivered in shipment,Low,Resolved,Within SLA,2026-08-12 08:00:00,2026-08-12 15:00:00,4
+TCK-4248,CUST-1007,Delayed delivery status inquiry,High,Resolved,Within SLA,2026-08-06 12:00:00,2026-08-09 00:00:00,3
+TCK-4249,CUST-1094,Damaged package on delivery,Low,Resolved,Within SLA,2026-08-09 13:00:00,2026-08-10 20:00:00,5
+TCK-4250,CUST-1025,Request for Certificate of Conformance,High,Waiting Customer,At Risk,2026-08-10 12:00:00,,3
+TCK-4251,CUST-1084,Delayed delivery status inquiry,High,Resolved,Within SLA,2026-08-08 09:00:00,2026-08-10 03:00:00,5
+TCK-4252,CUST-1034,Order cancellation inquiry,Medium,Resolved,Within SLA,2026-08-13 08:00:00,2026-08-16 00:00:00,5
+TCK-4253,CUST-1002,Invoice payment terms extension request,Low,Resolved,Within SLA,2026-08-21 15:00:00,2026-08-23 05:00:00,5
+TCK-4254,CUST-1003,Order cancellation inquiry,Low,Resolved,Within SLA,2026-08-15 11:00:00,2026-08-15 23:00:00,3
+TCK-4255,CUST-1087,Request for Certificate of Conformance,Low,Waiting Customer,At Risk,2026-08-08 15:00:00,,3
+TCK-4256,CUST-1107,Order cancellation inquiry,Critical,Resolved,Within SLA,2026-08-17 08:00:00,2026-08-17 17:00:00,5
+TCK-4257,CUST-1009,Urgent quote for high-volume order,High,Resolved,Within SLA,2026-09-05 11:00:00,2026-09-07 01:00:00,4
+TCK-4258,CUST-1086,Urgent quote for high-volume order,Medium,Resolved,Within SLA,2026-08-21 15:00:00,2026-08-21 19:00:00,5
+TCK-4259,CUST-1006,Request for Certificate of Conformance,Critical,In Progress,Breached,2026-08-20 08:00:00,,5
+TCK-4260,CUST-1047,Invoice payment terms extension request,High,Waiting Customer,At Risk,2026-09-04 15:00:00,,4
+TCK-4261,CUST-1021,Discrepancy on freight surcharge,High,Resolved,Within SLA,2026-09-10 16:00:00,2026-09-11 14:00:00,5
+TCK-4262,CUST-1095,Discrepancy on freight surcharge,Critical,Resolved,Within SLA,2026-08-17 17:00:00,2026-08-20 00:00:00,5
+TCK-4263,CUST-1060,Discrepancy on freight surcharge,High,Resolved,Within SLA,2026-08-15 15:00:00,2026-08-17 23:00:00,5
+TCK-4264,CUST-1056,Invoice payment terms extension request,High,Resolved,Within SLA,2026-08-14 13:00:00,2026-08-16 14:00:00,5
+TCK-4265,CUST-1060,Order cancellation inquiry,Medium,Waiting Customer,At Risk,2026-08-08 13:00:00,,4
+TCK-4266,CUST-1118,Damaged package on delivery,High,In Progress,Breached,2026-09-09 10:00:00,,4
+TCK-4267,CUST-1018,Incorrect SKU delivered in shipment,Critical,Resolved,Within SLA,2026-08-11 14:00:00,2026-08-12 08:00:00,4
+TCK-4268,CUST-1070,Delayed delivery status inquiry,Low,Resolved,Within SLA,2026-08-06 12:00:00,2026-08-07 13:00:00,5
+TCK-4269,CUST-1030,Discrepancy on freight surcharge,Critical,Resolved,Within SLA,2026-08-13 13:00:00,2026-08-15 16:00:00,4
+TCK-4270,CUST-1120,Request for Certificate of Conformance,Critical,Waiting Customer,At Risk,2026-08-20 17:00:00,,5
+TCK-4271,CUST-1096,Request for Certificate of Conformance,Low,Resolved,Within SLA,2026-08-20 15:00:00,2026-08-21 14:00:00,5
+TCK-4272,CUST-1115,Incorrect SKU delivered in shipment,Low,Resolved,Within SLA,2026-09-07 09:00:00,2026-09-10 04:00:00,5
+TCK-4273,CUST-1118,Invoice payment terms extension request,High,In Progress,Breached,2026-08-21 14:00:00,,5
+TCK-4274,CUST-1106,Incorrect SKU delivered in shipment,Low,Resolved,Within SLA,2026-08-18 08:00:00,2026-08-18 14:00:00,4
+TCK-4275,CUST-1038,Invoice payment terms extension request,Medium,Waiting Customer,At Risk,2026-08-17 09:00:00,,4
+TCK-4276,CUST-1033,Order cancellation inquiry,Low,Resolved,Within SLA,2026-09-02 13:00:00,2026-09-04 20:00:00,4
+TCK-4277,CUST-1090,Urgent quote for high-volume order,High,Resolved,Within SLA,2026-08-30 13:00:00,2026-08-31 19:00:00,5
+TCK-4278,CUST-1055,Order cancellation inquiry,Low,Resolved,Within SLA,2026-09-06 08:00:00,2026-09-09 03:00:00,5
+TCK-4279,CUST-1045,Delayed delivery status inquiry,High,Resolved,Within SLA,2026-09-05 14:00:00,2026-09-08 14:00:00,4
+TCK-4280,CUST-1055,Discrepancy on freight surcharge,Critical,In Progress,Breached,2026-08-07 14:00:00,,4
+TCK-4281,CUST-1063,Invoice payment terms extension request,Critical,Resolved,Within SLA,2026-08-22 16:00:00,2026-08-23 07:00:00,4
+TCK-4282,CUST-1032,Invoice payment terms extension request,Critical,Resolved,Within SLA,2026-08-30 13:00:00,2026-08-31 23:00:00,4
+TCK-4283,CUST-1061,Delayed delivery status inquiry,High,Resolved,Within SLA,2026-08-25 16:00:00,2026-08-28 05:00:00,5
+TCK-4284,CUST-1079,Request for Certificate of Conformance,Low,Resolved,Within SLA,2026-08-06 10:00:00,2026-08-06 17:00:00,4
+TCK-4285,CUST-1057,Invoice payment terms extension request,Medium,Waiting Customer,At Risk,2026-09-04 12:00:00,,5
+TCK-4286,CUST-1073,Request for Certificate of Conformance,Low,Resolved,Within SLA,2026-08-22 17:00:00,2026-08-23 12:00:00,5
+TCK-4287,CUST-1067,Order cancellation inquiry,Medium,Resolved,Within SLA,2026-09-03 12:00:00,2026-09-04 12:00:00,4
+TCK-4288,CUST-1038,Discrepancy on freight surcharge,Critical,Resolved,Within SLA,2026-08-13 10:00:00,2026-08-13 23:00:00,5
+TCK-4289,CUST-1062,Order cancellation inquiry,Medium,Resolved,Within SLA,2026-08-06 14:00:00,2026-08-07 16:00:00,3
+TCK-4290,CUST-1006,Urgent quote for high-volume order,Medium,Waiting Customer,At Risk,2026-08-20 13:00:00,,5
+TCK-4291,CUST-1075,Order cancellation inquiry,Medium,Resolved,Within SLA,2026-09-03 09:00:00,2026-09-04 01:00:00,5
+TCK-4292,CUST-1018,Damaged package on delivery,Low,Resolved,Within SLA,2026-09-03 15:00:00,2026-09-05 17:00:00,5
+TCK-4293,CUST-1056,Delayed delivery status inquiry,High,Resolved,Within SLA,2026-09-09 09:00:00,2026-09-11 18:00:00,3
+TCK-4294,CUST-1005,Urgent quote for high-volume order,Critical,In Progress,Breached,2026-09-10 14:00:00,,4
+TCK-4295,CUST-1009,Invoice payment terms extension request,High,Waiting Customer,At Risk,2026-08-28 15:00:00,,3
+TCK-4296,CUST-1065,Incorrect SKU delivered in shipment,Medium,Resolved,Within SLA,2026-08-13 08:00:00,2026-08-14 08:00:00,4
+TCK-4297,CUST-1074,Damaged package on delivery,Medium,Resolved,Within SLA,2026-09-03 16:00:00,2026-09-05 19:00:00,4
+TCK-4298,CUST-1034,Order cancellation inquiry,Low,Resolved,Within SLA,2026-08-17 17:00:00,2026-08-20 01:00:00,4
+TCK-4299,CUST-1072,Delayed delivery status inquiry,Medium,Resolved,Within SLA,2026-08-18 10:00:00,2026-08-20 04:00:00,5
+TCK-4300,CUST-1096,Request for Certificate of Conformance,Low,Waiting Customer,At Risk,2026-08-29 08:00:00,,4
+TCK-4301,CUST-1101,Delayed delivery status inquiry,Low,Resolved,Within SLA,2026-09-08 12:00:00,2026-09-11 11:00:00,4
+TCK-4302,CUST-1039,Damaged package on delivery,High,Resolved,Within SLA,2026-08-21 15:00:00,2026-08-22 22:00:00,5
+TCK-4303,CUST-1085,Order cancellation inquiry,Critical,Resolved,Within SLA,2026-09-05 11:00:00,2026-09-06 03:00:00,5
+TCK-4304,CUST-1050,Invoice payment terms extension request,Medium,Resolved,Within SLA,2026-08-14 16:00:00,2026-08-15 14:00:00,4
+TCK-4305,CUST-1062,Invoice payment terms extension request,Medium,Waiting Customer,At Risk,2026-08-21 14:00:00,,5
+TCK-4306,CUST-1047,Incorrect SKU delivered in shipment,High,Resolved,Within SLA,2026-09-01 08:00:00,2026-09-03 19:00:00,4
+TCK-4307,CUST-1112,Discrepancy on freight surcharge,Critical,Resolved,Within SLA,2026-08-07 11:00:00,2026-08-09 14:00:00,3
+TCK-4308,CUST-1058,Incorrect SKU delivered in shipment,Medium,Resolved,Within SLA,2026-09-05 17:00:00,2026-09-08 14:00:00,3
+TCK-4309,CUST-1083,Damaged package on delivery,Medium,Resolved,Within SLA,2026-09-08 12:00:00,2026-09-11 07:00:00,4
+TCK-4310,CUST-1056,Delayed delivery status inquiry,Critical,Waiting Customer,At Risk,2026-08-10 16:00:00,,4
+TCK-4311,CUST-1091,Damaged package on delivery,Low,Resolved,Within SLA,2026-08-29 12:00:00,2026-08-31 18:00:00,5
+TCK-4312,CUST-1060,Discrepancy on freight surcharge,High,Resolved,Within SLA,2026-09-09 17:00:00,2026-09-11 14:00:00,5
+TCK-4313,CUST-1110,Order cancellation inquiry,Critical,Resolved,Within SLA,2026-08-30 17:00:00,2026-08-31 14:00:00,3
+TCK-4314,CUST-1044,Invoice payment terms extension request,Critical,Resolved,Within SLA,2026-08-27 16:00:00,2026-08-30 14:00:00,4
+TCK-4315,CUST-1081,Invoice payment terms extension request,High,In Progress,Breached,2026-08-23 12:00:00,,5
+TCK-4316,CUST-1077,Incorrect SKU delivered in shipment,High,Resolved,Within SLA,2026-08-26 11:00:00,2026-08-27 15:00:00,5
+TCK-4317,CUST-1040,Incorrect SKU delivered in shipment,High,Resolved,Within SLA,2026-09-08 14:00:00,2026-09-10 05:00:00,5
+TCK-4318,CUST-1077,Request for Certificate of Conformance,Medium,Resolved,Within SLA,2026-08-14 12:00:00,2026-08-15 16:00:00,5
+TCK-4319,CUST-1088,Discrepancy on freight surcharge,High,Resolved,Within SLA,2026-08-19 15:00:00,2026-08-22 13:00:00,5
+TCK-4320,CUST-1016,Urgent quote for high-volume order,Medium,Waiting Customer,At Risk,2026-08-19 17:00:00,,5
