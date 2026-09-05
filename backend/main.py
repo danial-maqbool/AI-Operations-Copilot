@@ -6,7 +6,6 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from backend.config import settings
 from backend.database import init_db
-from backend.api import health, data_sources
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -28,9 +27,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+from backend.api import health, data_sources, catalog
+
 # Register routers
 app.include_router(health.router, prefix="/api")
 app.include_router(data_sources.router, prefix="/api")
+app.include_router(catalog.router, prefix="/api")
 
 # Static frontend serving when built
 frontend_dist = settings.BASE_DIR / "frontend" / "dist"
