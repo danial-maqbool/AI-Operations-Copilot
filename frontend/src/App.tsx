@@ -1,122 +1,168 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import React, { useState, useEffect } from 'react';
+import { Sidebar } from './components/Sidebar';
+import { Header } from './components/Header';
+import { MorningReviewModal } from './components/MorningReviewModal';
+import { CommandPalette } from './components/CommandPalette';
+import { Customer360Modal } from './components/Customer360Modal';
 
-function App() {
-  const [count, setCount] = useState(0)
+import { DashboardView } from './views/DashboardView';
+import { CopilotView } from './views/CopilotView';
+import { DataSourcesView } from './views/DataSourcesView';
+import { CatalogView } from './views/CatalogView';
+import { MetricsView } from './views/MetricsView';
+import { ExceptionsView } from './views/ExceptionsView';
+import { ActionCenterView } from './views/ActionCenterView';
+import { WorkflowView } from './views/WorkflowView';
+import { KnowledgeBaseView } from './views/KnowledgeBaseView';
+import { ReportsView } from './views/ReportsView';
+import { AuditView } from './views/AuditView';
+
+import { api } from './services/api';
+import { MorningReviewData } from './types';
+
+export function App() {
+  const [activeTab, setActiveTab] = useState<string>('dashboard');
+  const [openExceptionsCount, setOpenExceptionsCount] = useState<number>(0);
+  const [proposedActionsCount, setProposedActionsCount] = useState<number>(0);
+
+  // Modals & Drawers
+  const [morningReviewData, setMorningReviewData] = useState<MorningReviewData | null>(null);
+  const [isMorningReviewOpen, setIsMorningReviewOpen] = useState<boolean>(false);
+  const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState<boolean>(false);
+  const [selectedCustomerId, setSelectedCustomerId] = useState<string | null>(null);
+
+  const [isLoadingDemo, setIsLoadingDemo] = useState<boolean>(false);
+  const [isRunningReview, setIsRunningReview] = useState<boolean>(false);
+
+  useEffect(() => {
+    loadCounts();
+  }, [activeTab]);
+
+  const loadCounts = async () => {
+    try {
+      const [excs, acts] = await Promise.all([
+        api.getExceptions(),
+        api.getActions('PROPOSED')
+      ]);
+      setOpenExceptionsCount(excs.filter((e: any) => e.status === 'OPEN').length);
+      setProposedActionsCount(acts.length);
+    } catch (err) {
+      // Quietly continue if backend is starting
+    }
+  };
+
+  const handleRunMorningReview = async () => {
+    setIsRunningReview(true);
+    try {
+      const review = await api.runMorningReview();
+      setMorningReviewData(review);
+      setIsMorningReviewOpen(true);
+      loadCounts();
+    } catch (err) {
+      alert('Failed to execute morning review: ' + err);
+    } finally {
+      setIsRunningReview(false);
+    }
+  };
+
+  const handleLoadDemo = async () => {
+    setIsLoadingDemo(true);
+    try {
+      await api.loadDemoCompany();
+      alert('Demo company dataset successfully loaded with 10 tables, 4 policy documents, and seeded exceptions!');
+      loadCounts();
+      window.location.reload();
+    } catch (err) {
+      alert('Failed to load demo dataset: ' + err);
+    } finally {
+      setIsLoadingDemo(false);
+    }
+  };
+
+  const renderActiveView = () => {
+    switch (activeTab) {
+      case 'dashboard':
+        return <DashboardView onNavigate={setActiveTab} onSelectCustomer={setSelectedCustomerId} />;
+      case 'copilot':
+        return <CopilotView />;
+      case 'data-sources':
+        return <DataSourcesView />;
+      case 'catalog':
+        return <CatalogView />;
+      case 'metrics':
+        return <MetricsView />;
+      case 'exceptions':
+        return <ExceptionsView onSelectCustomer={setSelectedCustomerId} />;
+      case 'actions':
+        return <ActionCenterView />;
+      case 'workflows':
+        return <WorkflowView />;
+      case 'knowledge':
+        return <KnowledgeBaseView />;
+      case 'reports':
+        return <ReportsView />;
+      case 'audit':
+        return <AuditView />;
+      default:
+        return <DashboardView onNavigate={setActiveTab} onSelectCustomer={setSelectedCustomerId} />;
+    }
+  };
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div className="min-h-screen bg-slate-950 text-slate-100 flex">
+      {/* Sidebar Navigation */}
+      <Sidebar
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+        openExceptionsCount={openExceptionsCount}
+        proposedActionsCount={proposedActionsCount}
+      />
 
-      <div className="ticks"></div>
+      {/* Main Container */}
+      <div className="flex-1 ml-64 flex flex-col min-h-screen">
+        {/* Top Header */}
+        <Header
+          workspaceName="Acme Industrial Supplies"
+          dataHealthScore={91.6}
+          onRunMorningReview={handleRunMorningReview}
+          onLoadDemo={handleLoadDemo}
+          onOpenCommandPalette={() => setIsCommandPaletteOpen(true)}
+          isLoadingDemo={isLoadingDemo}
+          isRunningReview={isRunningReview}
+        />
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+        {/* Dynamic View Content */}
+        <main className="flex-1 p-8 mt-16 overflow-y-auto">
+          {renderActiveView()}
+        </main>
+      </div>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+      {/* Morning Operations Review Modal */}
+      <MorningReviewModal
+        isOpen={isMorningReviewOpen}
+        onClose={() => setIsMorningReviewOpen(false)}
+        data={morningReviewData}
+        onNavigateToActions={() => setActiveTab('actions')}
+      />
+
+      {/* Command Palette Modal (Ctrl + K) */}
+      <CommandPalette
+        isOpen={isCommandPaletteOpen}
+        onClose={() => setIsCommandPaletteOpen(false)}
+        onNavigate={setActiveTab}
+        onAskCopilot={(q) => {
+          setActiveTab('copilot');
+        }}
+        onRunMorningReview={handleRunMorningReview}
+      />
+
+      {/* Customer 360 Drilldown Modal */}
+      <Customer360Modal
+        customerId={selectedCustomerId}
+        onClose={() => setSelectedCustomerId(null)}
+      />
+    </div>
+  );
 }
 
-export default App
+export default App;
