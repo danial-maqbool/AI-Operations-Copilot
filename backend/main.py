@@ -27,7 +27,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-from backend.api import health, data_sources, catalog, quality, queries
+from backend.api import health, data_sources, catalog, quality, queries, dataframe_analysis
 
 # Register routers
 app.include_router(health.router, prefix="/api")
@@ -35,6 +35,7 @@ app.include_router(data_sources.router, prefix="/api")
 app.include_router(catalog.router, prefix="/api")
 app.include_router(quality.router, prefix="/api")
 app.include_router(queries.router, prefix="/api")
+app.include_router(dataframe_analysis.router, prefix="/api")
 
 # Static frontend serving when built
 frontend_dist = settings.BASE_DIR / "frontend" / "dist"
