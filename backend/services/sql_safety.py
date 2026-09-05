@@ -150,6 +150,11 @@ class SQLSafetyValidator:
         return sanitized_sql, tables, explanation
 
     @classmethod
+    def validate_query(cls, sql: str, allowed_tables: Optional[List[str]] = None) -> Tuple[str, str]:
+        safe_sql, tables, explanation = cls.validate_and_sanitize(sql, allowed_tables)
+        return safe_sql, explanation
+
+    @classmethod
     def execute_safe_query(cls, sql: str, allowed_tables: Optional[List[str]] = None) -> Dict[str, Any]:
         start_time = time.time()
         sanitized_sql, tables, explanation = cls.validate_and_sanitize(sql, allowed_tables)
@@ -202,3 +207,6 @@ class SQLSafetyValidator:
             }
         finally:
             conn.close()
+
+SafeSQLEngine = SQLSafetyValidator
+

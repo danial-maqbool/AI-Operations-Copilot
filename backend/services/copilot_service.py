@@ -371,3 +371,26 @@ class CopilotOrchestrator:
             },
             tools_executed=tools_executed
         )
+
+class OperationsCopilot:
+    @staticmethod
+    def process_user_turn(question: str, conversation_id: Optional[str] = None, workspace_id: Optional[str] = None, db: Optional[Session] = None):
+        orchestrator = CopilotOrchestrator()
+        req = CopilotChatRequest(
+            question=question,
+            conversation_id=conversation_id,
+            workspace_id=workspace_id
+        )
+        res = orchestrator.process_chat(req, db)
+        
+        class CopilotTurnResult:
+            def __init__(self, r):
+                self.answer = r.direct_answer
+                self.document_citations = r.policy_citations
+                self.sql_queries = r.sql_queries
+                self.tool_calls_executed = r.tools_executed
+                self.recommended_actions = r.recommended_actions
+                self.table_data = r.table_data
+                self.raw = r
+        return CopilotTurnResult(res)
+

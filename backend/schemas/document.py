@@ -1,4 +1,4 @@
-﻿from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field
 from typing import Optional, List, Dict, Any
 from datetime import datetime
 
@@ -31,3 +31,8 @@ class SearchResult(BaseModel):
     content: str
     score: float
     citation: str
+
+    @property
+    def document_name(self) -> str:
+        return self.filename
+

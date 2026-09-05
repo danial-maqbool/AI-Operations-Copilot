@@ -1,4 +1,4 @@
-﻿import re
+import re
 import shutil
 from pathlib import Path
 from typing import List, Dict, Any, Optional, Tuple
@@ -251,3 +251,6 @@ class RAGService:
                 ))
 
         return results
+
+    search_knowledge_base = search
+
